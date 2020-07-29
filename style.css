@@ -395,6 +395,7 @@ img {
     color: var(--white);
     background-color: var(--searchResults);
     padding: 5px 10px 8px;
+    border-radius: 40px 0 0;
 }
 
 #back-to-top:hover {
