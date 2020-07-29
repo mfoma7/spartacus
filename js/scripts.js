@@ -50,4 +50,5 @@ jQuery(document).ready(function ($) {
     $('.toc-toggle span').click(function () {
         $('.toc-hp').slideToggle();
     });
+
 });

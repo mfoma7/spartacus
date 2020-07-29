@@ -411,6 +411,10 @@ img {
     margin:0!important;
 }
 
+.btt-transparent {
+    background-color: transparent!important;
+}
+
 @media (max-width: 767px) {
     #back-to-top {
         bottom: 1.5rem;
