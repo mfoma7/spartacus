@@ -43,10 +43,9 @@
             ?>
         </div>
     <?php endif; ?>
-    <img src="<?php echo SPARTACUS_DIR_URI . '/img/double-up-80.png'; ?>" alt="Back to top" id="back-to-top" 
-    <?php 
+    <i id="back-to-top" class="icon-up-open" <?php 
     if(get_field('spartacus_enable_mobile_lower_menu','options',1)) {echo 'style="bottom:9.5rem;"';}
-    ?>>
+    ?>></i>
     <!--.sidenav-wrapper-->
     <div id="panel">
         <header class="site-header">

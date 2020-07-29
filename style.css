@@ -35,7 +35,7 @@ Text Domain: spartacus
     /** --Colors-- **/
     --white: #fff;
     /* Section anchor */
-    --sectionAnchor: #889fde;
+    --sectionAnchor: #333;
     /* SCROLLBAR element colors */
     --kazinoScrollBar: #757575;
     /* NAVBAR element colors */
@@ -151,7 +151,8 @@ img {
 
 .section a {
     font-weight: bold;
-    color: var(--sectionAnchor)
+    color: var(--sectionAnchor);
+    letter-spacing: .1rem;
 }
 
 /** ------- Utilities ------- **/
@@ -384,13 +385,16 @@ img {
 
 #back-to-top {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 0;
+    right: 0;
     transition: background-color .3s, opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
-    max-width: 4rem;
+    font-size: 40px;
+    color: var(--white);
+    background-color: var(--searchResults);
+    padding: 5px 10px 8px;
 }
 
 #back-to-top:hover {
@@ -400,6 +404,11 @@ img {
 #back-to-top.show {
     opacity: 1;
     visibility: visible;
+}
+
+#back-to-top.icon-up-open:before {
+    display: flex;
+    margin:0!important;
 }
 
 @media (max-width: 767px) {
@@ -1572,12 +1581,12 @@ ul {
     padding-top: 1rem;
 }
 
-.single-block-el .element-name a{
+.single-block-el .element-name a {
     font-size: 1.5rem;
     color: var(--white);
 }
 
-.single-block-el .element-number a{
+.single-block-el .element-number a {
     font-size: 2.2rem;
     color: gold;
     font-weight: bold;
@@ -1597,11 +1606,11 @@ ul {
     .single-block-el .element-image img {
         max-width: 7rem;
     }
-    .single-block-el .element-name a{
+    .single-block-el .element-name a {
         font-size: 1.7rem;
         font-weight: bold;
     }
-    .single-block-el .element-number a{
+    .single-block-el .element-number a {
         font-size: 3rem;
     }
 }
