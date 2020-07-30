@@ -15,22 +15,22 @@ Text Domain: spartacus
 */
 
 @font-face {
-    font-family: Roboto;
-    src: url(fonts/Roboto-Bold.ttf);
+    font-family: Open Sans;
+    src: url(fonts/OpenSans-Bold.ttf);
     font-weight: bold;
     font-display: swap;
 }
 
 @font-face {
-    font-family: Roboto;
-    src: url(fonts/Roboto-Regular.ttf);
+    font-family: Open Sans;
+    src: url(fonts/OpenSans-Regular.ttf);
     font-weight: normal;
     font-display: swap;
 }
 
 :root {
     /** Fonts **/
-    --mainFont: 'Roboto', sans-serif;
+    --mainFont: 'Open Sans', sans-serif;
     --secondaryFont: 'notset', sans-serif;
     /** --Colors-- **/
     --white: #fff;
@@ -87,7 +87,7 @@ body {
 }
 
 .page-content {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 /** ------- Headings ------- **/
@@ -409,7 +409,7 @@ img {
 
 #back-to-top.icon-up-open:before {
     display: flex;
-    margin:0!important;
+    margin: 0!important;
 }
 
 .btt-transparent {
@@ -601,7 +601,7 @@ img {
 
 .header-block p {
     color: var(--headerBlockText);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin: 0;
     text-align: justify;
 }
