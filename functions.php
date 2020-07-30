@@ -1,12 +1,35 @@
 <?php
 // Define path and URL to the ACF plugin.
-define('MY_ACF_PATH', get_stylesheet_directory() . '/vendor/advanced-custom-fields-pro/');
-define('MY_ACF_URL', get_stylesheet_directory_uri() . '/vendor/advanced-custom-fields-pro/');
+
 define('TEMPLATE_DIR', get_template_directory());
 define('SPARTACUS_DIR_URI', get_template_directory_uri());
+define('MY_ACF_URL', get_stylesheet_directory_uri() . '/vendor/acf/');
 
-// Include the ACF plugin.
-require_once MY_ACF_PATH . 'acf.php';
+/*=============================================
+=            ACF			            =
+=============================================*/
+// 1. customize ACF path
+add_filter('acf/settings/path', 'my_acf_settings_path');
+function my_acf_settings_path($path)
+{
+    $path = TEMPLATE_DIR . '/vendor/acf/';
+    return $path;
+}
+
+// 2. customize ACF dir
+add_filter('acf/settings/dir', 'my_acf_settings_dir');
+
+function my_acf_settings_dir($dir)
+{
+    $dir = SPARTACUS_DIR_URI . '/vendor/acf/';
+    return $dir;
+}
+
+// 3. Include ACF
+include_once(TEMPLATE_DIR . '/vendor/acf/acf.php');
+/*=============================================
+=            END ACF			            =
+=============================================*/
 
 //Include ACF fields
 require_once TEMPLATE_DIR . '/inc/acf-fields.php';
@@ -143,30 +166,12 @@ function spartacus_custom_excerpt_length($length)
     return 20;
 }
 
-// Customize the url setting to fix incorrect asset URLs.
-function my_acf_settings_url($url)
-{
-    return MY_ACF_URL;
-}
-
-// (Optional) Hide the ACF admin menu item.
-function my_acf_settings_show_admin($show_admin)
-{
-    return true;
-}
-
 /*=============================================
 =            FILTERS			            =
 =============================================*/
 
 //Change excerpt lenght
 add_filter('excerpt_length', 'spartacus_custom_excerpt_length', 10);
-
-// Customize the url setting to fix incorrect asset URLs.
-add_filter('acf/settings/url', 'my_acf_settings_url');
-
-// (Optional) Hide the ACF admin menu item.
-add_filter('acf/settings/show_admin', 'my_acf_settings_show_admin');
 
 //Add icons to menu items
 add_filter('wp_nav_menu_objects', 'spartacus_nav_menu_objects', 10, 2);
@@ -195,5 +200,3 @@ add_action('after_setup_theme', 'spartacus_setup');
 
 //Unregister widgets
 add_action('widgets_init', 'spartacus_unregister_widgets');
-
-
