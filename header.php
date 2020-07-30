@@ -44,7 +44,7 @@
         </div>
     <?php endif; ?>
     <i id="back-to-top" class="icon-up-open" <?php 
-    if(get_field('spartacus_enable_mobile_lower_menu','options',1)) {echo 'style="bottom:9.5rem;"';}
+    if(get_field('spartacus_enable_mobile_lower_menu','options',1)) {echo 'style="bottom:8.5rem;"';}
     ?>></i>
     <!--.sidenav-wrapper-->
     <div id="panel">

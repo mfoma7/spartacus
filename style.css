@@ -419,9 +419,12 @@ img {
 @media (max-width: 767px) {
     #back-to-top {
         bottom: 1.5rem;
-        right: 1rem;
-        max-width: 3.5rem;
+        border-radius: 0;
+        padding:0 7px 7px;
+        font-size: 30px;
     }
+
+
 }
 
 /** ------- Footer ------- **/
