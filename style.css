@@ -1555,7 +1555,7 @@ ul {
 
 .front-page .toc-hp ul li a {
     color: var(--headerBlockText);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
@@ -1570,7 +1570,7 @@ ul {
 .front-page .toc-toggle span {
     cursor: pointer;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: var(--headerBlockText);
 }
 
@@ -1581,30 +1581,40 @@ ul {
 }
 
 .single-block-el {
-    flex: 0 0 31%;
+    flex: 0 0 32%;
     background-color: rgba(0, 0, 0, 0.50);
+    border-radius: .5rem;
 }
 
 .elements-info-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    height: 100%;
     padding-top: 1rem;
+}
+
+.single-block-el .element-name {
+    display: flex;
 }
 
 .single-block-el .element-name a {
     font-size: 1.5rem;
     color: var(--white);
+    text-align: center;
+    font-weight: bold;
+    line-height: 2rem;
 }
 
 .single-block-el .element-number a {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     color: gold;
     font-weight: bold;
 }
 
 .single-block-el .element-image img {
-    max-width: 5rem;
+    max-width: 6rem;
 }
 
 @media (min-width:768px) {
@@ -1615,10 +1625,10 @@ ul {
         align-items: flex-start;
     }
     .single-block-el .element-image img {
-        max-width: 7rem;
+        max-width: 9rem;
     }
     .single-block-el .element-name a {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         font-weight: bold;
     }
     .single-block-el .element-number a {
