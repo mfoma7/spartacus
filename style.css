@@ -394,8 +394,12 @@ img {
     font-size: 40px;
     color: var(--white);
     background-color: var(--searchResults);
-    padding: 5px 10px 8px;
+    padding: 5px 8px 6px;
     border-radius: 40px 0 0;
+}
+
+i.icon-up-open {
+    display: flex;
 }
 
 #back-to-top:hover {
@@ -418,13 +422,12 @@ img {
 
 @media (max-width: 767px) {
     #back-to-top {
-        bottom: 1.5rem;
         border-radius: 0;
-        padding:0 7px 7px;
-        font-size: 30px;
+        font-size: 24px;
     }
-
-
+    #back-to-top.mobile-menu-enabled {
+        bottom: 8.1rem;
+    }
 }
 
 /** ------- Footer ------- **/

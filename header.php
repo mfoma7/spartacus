@@ -32,7 +32,7 @@
     </div>
     <!-- End Slideout menu -->
     <?php if (get_field('spartacus_enable_mobile_lower_menu', 'options', 1)) : ?>
-        <div class="mobile-lower-header" <?php echo 'style="background-color:'.get_field('spartacus_header_block_bg', 'options').'"'?>>
+        <div class="mobile-lower-header" <?php echo 'style="background-color:' . get_field('spartacus_header_block_bg', 'options') . '"' ?>>
             <?php
             $args = array(
                 'theme_location' => 'main-menu',
@@ -43,9 +43,15 @@
             ?>
         </div>
     <?php endif; ?>
-    <i id="back-to-top" class="icon-up-open" <?php 
-    if(get_field('spartacus_enable_mobile_lower_menu','options',1)) {echo 'style="bottom:8.5rem;"';}
-    ?>></i>
+    <div id="back-to-top" class="back-to-top-button <?php
+                                                    if (get_field('spartacus_enable_mobile_lower_menu', 'options', 1)) {
+                                                        echo 'mobile-menu-enabled';
+                                                    }
+                                                    ?>">
+        <div class="btt-icon-wrap">
+            <i class="icon-up-open"></i>
+        </div>
+    </div>
     <!--.sidenav-wrapper-->
     <div id="panel">
         <header class="site-header">
