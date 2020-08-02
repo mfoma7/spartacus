@@ -742,7 +742,7 @@ i.icon-up-open {
 }
 
 /** ------- Breadcrumbs ------- **/
-
+/* 
 .breadcrumbs-bar {
     position: relative;
 }
@@ -752,7 +752,7 @@ i.icon-up-open {
     color: var(--black);
     font-size: 1rem;
     bottom: -4.5rem;
-}
+} */
 
 .breadcrumbs a {
     color: var(--black);

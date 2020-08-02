@@ -3,7 +3,6 @@
 
 define('TEMPLATE_DIR', get_template_directory());
 define('SPARTACUS_DIR_URI', get_template_directory_uri());
-define('MY_ACF_URL', get_stylesheet_directory_uri() . '/vendor/acf/');
 
 /*=============================================
 =            ACF			            =
@@ -27,6 +26,15 @@ function my_acf_settings_dir($dir)
 
 // 3. Include ACF
 include_once(TEMPLATE_DIR . '/vendor/acf/acf.php');
+
+// Show menu ACF
+add_filter('acf/settings/show_admin', 'my_acf_show_admin');
+
+function my_acf_show_admin($show)
+{
+
+    return true;
+}
 /*=============================================
 =            END ACF			            =
 =============================================*/
