@@ -95,4 +95,7 @@
                 </div>
             </div>
         </header>
+        <div class="container">
+            <?php the_breadcrumb(); ?>
+        </div>
         <!--.site-header-->

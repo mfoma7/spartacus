@@ -623,12 +623,12 @@ i.icon-up-open {
     background-color: var(--headerBlockTocBg);
     border-radius: .5rem;
     padding: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .header-block__toc ul li {
     text-align: right;
-    line-height: 2.5rem;
+    line-height: 3rem;
 }
 
 .header-block__toc ul li a {
@@ -641,6 +641,8 @@ i.icon-up-open {
     font-weight: normal;
     margin-left: .5rem;
     color: var(--lightGray);
+    font-weight: bold;
+    font-size: 1.8rem;
 }
 
 @media (max-width:767px) {
@@ -655,8 +657,15 @@ i.icon-up-open {
         align-self: flex-start;
         margin-top: 2rem;
     }
+
+    .header-block__toc ul {
+        background-color: transparent;
+        font-size: 1.6rem;
+    }
+
     .header-block__toc ul li {
         text-align: left;
+        font-weight: bold;
     }
 }
 
@@ -742,21 +751,19 @@ i.icon-up-open {
 }
 
 /** ------- Breadcrumbs ------- **/
-/* 
-.breadcrumbs-bar {
-    position: relative;
+#breadcrumbs {
+    color:var(--black);
+    font-size: 1.1rem;
+    position: absolute;
 }
 
-.breadcrumbs {
-    position: absolute;
+#breadcrumbs a {
     color: var(--black);
-    font-size: 1rem;
-    bottom: -4.5rem;
-} */
+    font-size: 1.1rem;
+}
 
-.breadcrumbs a {
-    color: var(--black);
-    font-size: 1rem;
+.page #breadcrumbs, .page #breadcrumbs a, .single-casino-review #breadcrumbs, .single-casino-review #breadcrumbs a {
+    color:var(--white);
 }
 
 /** ------- Header Search ------- **/
@@ -955,7 +962,7 @@ i.icon-up-open {
     }
     .author_details img {
         border-radius: 0;
-        margin-right: 3rem;
+        margin-right: 1rem;
     }
     .someclass {
         display: flex;
@@ -1510,7 +1517,7 @@ ul {
 .not-found-button a {
     padding: 1rem 5rem;
     color: var(--white);
-    background-color: var(--kazinoMainColor);
+    background-color: #333;
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -1531,7 +1538,7 @@ ul {
 }
 
 .search-no-results .search-content {
-    padding-bottom: 15.5rem;
+    padding-bottom: 10rem;
 }
 
 .search-content>h3 {

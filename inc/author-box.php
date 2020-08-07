@@ -42,7 +42,7 @@ function spartacus_author_box($content)
         endif;
 
         $author_details = '<div class="author_socials_bar">
-        <span class="author_detail">Par Autoru</span>
+        <span class="author_detail">' . __('About author', 'spartacus') . '</span>
         <span class="author_social_icons">
         <a href="' . $linkedin . '"><img class="author-socials" src="' . SPARTACUS_DIR_URI . '/img/icons/linkedin.png' . '" alt="Linkedin" target="_blank" rel="nofollow"></a>
         <a href="' . $instagram . '"><img class="author-socials" src="' . SPARTACUS_DIR_URI . '/img/icons/instagram.png' . '" alt="Instagram" target="_blank" rel="nofollow"></a>
@@ -54,7 +54,7 @@ function spartacus_author_box($content)
 
             $author_details .= '<div class="author_details"><img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '" /><div class="someclass"><span class="author_name">' . $display_name . '</span>'  . '<p class="author_description">' . nl2br($user_description) . '</p></div>' . '</div>';
 
-        $author_details .= '<p class="author_links"><a href="' . $user_posts . '">Visi raksti no ' . $display_name . '</a>';
+        $author_details .= '<p class="author_links"><a href="' . $user_posts . '">' . __('All posts from', 'spartacus') . ' ' . $display_name . '</a>';
 
         // Check if author has a website in their profile
         if (!empty($user_website)) {
