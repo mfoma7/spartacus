@@ -3,7 +3,9 @@
 //Generate social icons for author fields
 function generate_social_icons()
 {
-    $author_id = get_the_author_meta('ID');
+    $author = get_user_by('slug', get_query_var('author_name'));
+
+    $author_id = $author->ID;
     $result = '';
 
     if (have_rows('social_accounts', 'options')) :
