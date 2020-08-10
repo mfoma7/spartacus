@@ -629,9 +629,8 @@ i.icon-up-open {
 
 .heading-image img {
     margin-left: 1rem;
-    display: inline-block;
-    height: 2.8rem;
-    width: 2.8rem;
+    height: 3rem;
+    width: 3rem;
     object-fit: contain;
 }
 
