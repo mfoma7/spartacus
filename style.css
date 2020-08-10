@@ -189,6 +189,13 @@ div.wp-caption {
     max-width: 100%;
 }
 
+p.wp-caption-text {
+    font-size: 12px;
+    margin: 0;
+    font-style: italic;
+    line-height: 16px;
+}
+
 @media (min-width:768px) {
     .cml {
         margin-left: 1rem;
@@ -661,12 +668,10 @@ i.icon-up-open {
         align-self: flex-start;
         margin-top: 2rem;
     }
-
     .header-block__toc ul {
         background-color: transparent;
         font-size: 1.6rem;
     }
-
     .header-block__toc ul li {
         text-align: left;
         font-weight: bold;
@@ -755,8 +760,9 @@ i.icon-up-open {
 }
 
 /** ------- Breadcrumbs ------- **/
+
 #breadcrumbs {
-    color:var(--black);
+    color: var(--black);
     font-size: 1.1rem;
     position: absolute;
 }
@@ -767,7 +773,7 @@ i.icon-up-open {
 }
 
 .page #breadcrumbs, .page #breadcrumbs a, .single-casino-review #breadcrumbs, .single-casino-review #breadcrumbs a {
-    color:var(--white);
+    color: var(--white);
 }
 
 /** ------- Header Search ------- **/
