@@ -187,6 +187,9 @@ add_filter('wp_nav_menu_objects', 'spartacus_nav_menu_objects', 10, 2);
 // Allow HTML in author bio section 
 remove_filter('pre_user_description', 'wp_filter_kses');
 
+//Remove admin bar in frontend
+add_filter('show_admin_bar', '__return_false');
+
 /*=============================================
 =            ACTIONS			            =
 =============================================*/
