@@ -1,6 +1,10 @@
 <?php get_header(); ?>
-<div class="header-block-bg" <?php if (get_field('spartacus_header_block_bg', 'options')) echo 'style="background-color:' . get_field('spartacus_header_block_bg', 'options') . '"';  ?>>
-    <div class="header-block">
+<div class="header-block-bg" <?php if (!get_field('page_add_custom_background') && get_field('spartacus_header_block_bg', 'options')) echo 'style="background-color:' . get_field('spartacus_header_block_bg', 'options') . '"';  ?>>
+    <div class="header-block <?php if (get_field('page_add_custom_background')) echo 'custom-background'?>" <?php $img = get_field('page_custom_background');
+
+                                if (get_field('page_add_custom_background')) {
+                                    echo 'style="background:url(' . $img . ')";';
+                                } ?>>
         <div class="page-heading container <?php if (get_field('image_after_heading')) {
                                                 echo "heading-image";
                                             } ?>">
