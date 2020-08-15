@@ -5,7 +5,7 @@ Author: KR
 Author URI: https://yoursite.lv/
 Description: Custom casino theme
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
-Version: 1.0.9
+Version: 1.0.10
 Requires at least: 5.0
 Tested up to: 5.4
 Requires PHP: 7.0
@@ -657,7 +657,6 @@ i.icon-up-open {
     color: var(--headerBlockText);
     font-size: 1.6rem;
     margin: 0;
-    text-align: justify;
 }
 
 .header-block__toc {
@@ -697,6 +696,11 @@ i.icon-up-open {
     .header-block .container {
         flex-direction: column;
     }
+
+    .page-heading {
+        padding:0 1.5rem;
+    }
+
     .page-heading h1 {
         font-size: 2.2rem;
         order: 1;
@@ -712,6 +716,14 @@ i.icon-up-open {
     .header-block__toc ul li {
         text-align: left;
         font-weight: bold;
+    }
+
+    .toc-toggle {
+        text-align: center;
+    }
+
+    .toc-toggle li {
+        text-align: left;
     }
 }
 
@@ -1645,8 +1657,8 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding:1rem 0;
     height: 100%;
-    padding-top: 1rem;
 }
 
 .single-block-el .element-name {
