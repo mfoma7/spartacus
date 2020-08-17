@@ -5,7 +5,7 @@ Author: KR
 Author URI: https://yoursite.lv/
 Description: Custom casino theme
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
-Version: 1.0.11
+Version: 1.0.12
 Requires at least: 5.0
 Tested up to: 5.4
 Requires PHP: 7.0
@@ -696,11 +696,9 @@ i.icon-up-open {
     .header-block .container {
         flex-direction: column;
     }
-
     .page-heading {
-        padding:0 1.5rem;
+        padding: 0 1.5rem;
     }
-
     .page-heading h1 {
         font-size: 2.4rem;
         order: 1;
@@ -717,11 +715,9 @@ i.icon-up-open {
         text-align: left;
         font-weight: bold;
     }
-
     .toc-toggle {
         text-align: center;
     }
-
     .toc-toggle li {
         text-align: left;
     }
@@ -1657,7 +1653,7 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding:1rem 0;
+    padding: 1rem 0;
     height: 100%;
 }
 
@@ -1699,5 +1695,69 @@ ul {
     }
     .single-block-el .element-number a {
         font-size: 3rem;
+    }
+}
+
+/* Table styling */
+
+@media (min-width:601px) {
+    .page-content table {
+        margin: 0 auto;
+        border: 1px solid #000;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .page-content td {
+        border: 1px solid #000;
+        padding: 5px;
+    }
+    .single-casino-main table {
+        margin: 0 auto;
+        border: 1px solid #000;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .single-casino-main td {
+        border: 1px solid #000;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .single-casino-main table {
+        width: 100%;
+    }
+    .single-casino-main thead {
+        display: none;
+    }
+    .single-casino-main tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    .single-casino-main tr td:first-child {
+        background: #f0f0f0;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    .single-casino-main tbody td {
+        display: block;
+        text-align: center;
+    }
+    .page-content table {
+        width: 100%;
+    }
+    .page-content thead {
+        display: none;
+    }
+    .page-content tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    .page-content tr td:first-child {
+        background: #f0f0f0;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    .page-content tbody td {
+        display: block;
+        text-align: center;
     }
 }
