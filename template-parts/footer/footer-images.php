@@ -1,13 +1,19 @@
 <div class="mid-footer__images--wrap">
     <?php
-    $images = get_field('footer_images', 'options');
-    if ($images) : ?>
+    // Check rows exists.
+    if (have_rows('footer_image_field', 'options')) :
 
-        <?php foreach ($images as $image) : ?>
+        // Loop through rows.
+        while (have_rows('footer_image_field', 'options')) : the_row();
 
-            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-        <?php endforeach; ?>
-
-    <?php endif; ?>
+            // Load sub field value.
+            $image = get_sub_field('footer_image', 'options');
+            $link = get_sub_field('footer_image_link', 'options');
+            // Do something...
+            echo '<a href="' . $link . '"><img src="' . $image['url'] . '" alt="' . $image['alt'] . '"></a>';
+        // End loop.
+        endwhile;
+    // Do something...
+    endif;
+    ?>
 </div>
