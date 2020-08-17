@@ -6,18 +6,23 @@
 
         </div>
         <div class="mid-footer">
-            <div class="mid-footer-wrap">
-                <div class="mid-footer__text">
-                    <?php if (the_field('footer_text', 'options')) : ?>
-                        <?php echo the_field('footer_text', 'options'); ?>
+            <div class="mid-footer__extra">
+                <span>
+                    <?php if (the_field('footer_extra_block', 'options')) : ?>
+                        <?php echo the_field('footer_extra_block', 'options'); ?>
                     <?php endif; ?>
-                </div>
-                <div class="mid-footer__socials">
-                    <?php include_once 'template-parts/footer/footer-socials.php'; ?>
-                </div>
+                </span>
             </div>
             <div class="mid-footer__images">
                 <?php include_once 'template-parts/footer/footer-images.php'; ?>
+            </div>
+            <div class="mid-footer__text">
+                <?php if (the_field('footer_text', 'options')) : ?>
+                    <p><?php echo the_field('footer_text', 'options'); ?></p>
+                <?php endif; ?>
+            </div>
+            <div class="mid-footer__socials">
+                <?php include_once 'template-parts/footer/footer-socials.php'; ?>
             </div>
         </div>
         <div class="lower-footer">
@@ -29,7 +34,7 @@
             </div>
             <div class="lower-footer__flag">
                 <?php if (get_field('copyright_flag', 'options')) : ?>
-                    <?php 
+                    <?php
                     $flag_img = get_field('copyright_flag', 'options');
                     ?>
                     <img src="<?php echo $flag_img['url']; ?>" alt="<?php echo $flag_img['alt']; ?>">

@@ -5,6 +5,7 @@
         $instagram = get_sub_field('instagram_link', 'options');
         $twitter = get_sub_field('twitter_link', 'options');
         $linkedin = get_sub_field('linkedin_link', 'options');
+        $facebook = get_sub_field('facebook_link', 'options');
 
     ?>
 
@@ -21,4 +22,8 @@
 
 <?php if ($linkedin) : ?>
     <a href="<?php echo $linkedin; ?>"><img src="<?php echo SPARTACUS_DIR_URI . '/img/icons/linkedin.png'; ?>" alt="Linkedin"></a>
+<?php endif; ?>
+
+<?php if ($facebook) : ?>
+    <a href="<?php echo $facebook; ?>"><img src="<?php echo SPARTACUS_DIR_URI . '/img/icons/facebook.png'; ?>" alt="Facebook"></a>
 <?php endif; ?>
