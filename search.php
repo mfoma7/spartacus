@@ -9,14 +9,14 @@ $search_query = array();
 
 foreach ($query_args as $key => $string) {
     $query_split = explode("=", $string);
-    // $search_query[$query_split[0]] = urldecode($query_split[1]);
-    $search_query[$query_split[0]] = isset($query_split[1]) ? $query_split[1] : null;
+    $search_query[$query_split[0]] = urldecode($query_split[1]);
+    // $search_query[$query_split[0]] = isset($query_split[1]) ? $query_split[1] : null;
 } // foreach
 
 $the_query = new WP_Query($search_query);
 if ($the_query->have_posts()) : ?>
     <main class="container page section no-sidebar">
-        <div class="search-content cml">
+        <div class="search-content">
             <div class="search-items-wrap">
                 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                     <div class="search-item-result">
@@ -33,7 +33,7 @@ if ($the_query->have_posts()) : ?>
     </main>
 <?php else : ?>
     <main class="container page section no-sidebar search-content">
-        <div class="search-content cml">
+        <div class="search-content">
             <h3><?php echo __('Nothing Found', 'spartacus');?></h3>
             <p><?php echo __('Sorry, no page or post matched your search criteria.', 'spartacus');?></p>
             <span><?php echo __('Try again with different keywords', 'spartacus');?></span>

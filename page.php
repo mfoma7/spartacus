@@ -29,7 +29,7 @@
 </div>
 
 <main class="container page section no-sidebar">
-    <div class="page-content cml">
+    <div class="page-content">
         <?php while (have_posts()) : the_post(); ?>
             <div class="text-center">
                 <?php the_content(); ?>
