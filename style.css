@@ -518,7 +518,7 @@ i.icon-up-open {
 }
 
 .mid-footer__extra {
-    width:100%;
+    width: 100%;
     text-align: center;
 }
 
@@ -577,12 +577,10 @@ i.icon-up-open {
     .mid-footer .mid-footer__socials img {
         max-width: 2.5rem;
     }
-
     .mid-footer__images--wrap {
         flex-wrap: wrap;
         justify-content: center;
     }
-
     .mid-footer__images--wrap img {
         margin-bottom: 2rem;
         margin-right: .5rem!important;
@@ -786,10 +784,6 @@ i.icon-up-open {
     .with-sidebar .sidebar {
         flex: 0 0 calc(30% - 2rem);
     }
-    .with-sidebar .widget {
-        border-radius: .5rem;
-        padding: 1rem;
-    }
     .with-sidebar .widget:not(:first-child) {
         margin-top: 1.5rem;
     }
@@ -950,7 +944,7 @@ i.icon-up-open {
     border: 1px #eaeaea solid;
     padding: 1.5rem 3rem;
     border-radius: .5rem;
-    margin: 5rem 0 1rem;
+    margin: 2rem 0;
 }
 
 .author-socials {
@@ -1040,6 +1034,13 @@ i.icon-up-open {
         text-align: left;
         margin: 0;
         font-size: 1rem;
+    }
+}
+
+@media (max-width:767px) {
+    .author_socials_bar {
+        justify-content: center;
+        padding-bottom: 2rem;
     }
 }
 
@@ -1778,4 +1779,60 @@ ul {
         display: block;
         text-align: center;
     }
+}
+
+/* Sidebar pages Widget */
+
+.sidebar-pages-wrap {
+    margin: 0px 0px 2rem 0px;
+    border: 1px solid #f1f1f1;
+    background: var(--white);
+    border-radius: .5rem;
+}
+
+.pages-wrap-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: .5rem .5rem 0 0;
+    box-shadow: 0 .4rem 1rem rgba(0, 0, 0, 0.10);
+    min-height: 4.5rem;
+    padding:1rem;
+}
+
+.pages-wrap-header img {
+    max-width: 2.5rem;
+}
+
+.sidebar-pages-wrap ul {
+    list-style-type: none;
+    padding: 0!important;
+}
+
+.sidebar-pages-wrap ul li {
+    padding: 1.4rem 1.7rem;
+    border-bottom: 1px solid #f1f3f5;
+    line-height: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-pages-wrap ul li a {
+    color: #006bae!important;
+    font-weight: normal!important;
+    font-size: 1.4rem;
+    letter-spacing: initial;
+}
+
+.pages-wrap-header h3 {
+    color: #49535c!important;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0!important;
+    line-height: 1.6rem;
+    font-weight: normal!important;
 }
