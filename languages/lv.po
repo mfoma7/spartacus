@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: Spartacus\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-07 10:26+0000\n"
-"PO-Revision-Date: 2020-08-07 10:30+0000\n"
-"Last-Translator: Kristaps Ritins\n"
-"Language-Team: Latviešu valoda\n"
+"PO-Revision-Date: 2020-08-18 12:19+0000\n"
+"Last-Translator: admin\n"
+"Language-Team: Latvian\n"
 "Language: lv\n"
 "Plural-Forms: nplurals=3; plural=n % 10 == 1 && n % 100 != 11 ? 0 : n != 0 ? "
 "1 : 2;\n"
@@ -13,21 +13,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.4.0; wp-5.4.2"
+"X-Loco-Version: 2.4.2; wp-5.4.2"
 
 #: 404.php:14
 msgid "PAGE NOT FOUND"
-msgstr ""
+msgstr "LAPA NETIKA ATRASTA"
 
 #: 404.php:15
 msgid ""
 "The page you are looking for might have been removed, had its name changed "
 "or is temporarily unavailable"
 msgstr ""
+"Lapu, kuru Jūs meklējāt ir dzēsta, mainīts nosaukums vai ir nepieejama uz "
+"nenoteiktu laiku."
 
 #: 404.php:16
 msgid "Go to the homepage"
-msgstr ""
+msgstr "Atgriezties uz sākumu"
 
 #: author.php:16
 msgid "Author pages"
