@@ -80,7 +80,7 @@ function spartacus_setup()
     add_theme_support('post-thumbnails');
     //Add custom logo
     add_theme_support('custom-logo');
-    add_theme_support('admin-bar', array('callback' => '__return_false'));
+    
     //Load text domain for translations
     load_theme_textdomain('spartacus', TEMPLATE_DIR . '/languages');
     //Add title tag
@@ -192,9 +192,6 @@ add_filter('wp_nav_menu_objects', 'spartacus_nav_menu_objects', 10, 2);
 
 // Allow HTML in author bio section 
 remove_filter('pre_user_description', 'wp_filter_kses');
-
-//Remove admin bar in frontend
-add_filter('show_admin_bar', '__return_false');
 
 /*=============================================
 =            ACTIONS			            =
