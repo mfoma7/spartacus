@@ -89,13 +89,11 @@
                 </div>
             </div>
             <!--.nav-bar-->
-            <div class="breadcrumbs-bar">
-                <div class="container">
 
-                </div>
-            </div>
         </header>
         <div class="container">
-            <?php the_breadcrumb(); ?>
+            <div id="breadcrumbs">
+                <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
+            </div>
         </div>
         <!--.site-header-->

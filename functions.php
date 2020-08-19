@@ -48,9 +48,6 @@ require_once TEMPLATE_DIR . '/inc/generate-social-icons.php';
 //Generate author box
 require_once TEMPLATE_DIR . '/inc/author-box.php';
 
-//Generate breadcrumbs
-require_once TEMPLATE_DIR . '/inc/breadcrumbs.php';
-
 //Include widget
 require_once TEMPLATE_DIR . '/inc/widgets/spartacus-widget-show-post.php';
 
@@ -125,13 +122,13 @@ function spartacus_scripts()
     wp_enqueue_style('animate', SPARTACUS_DIR_URI . '/css/animate.css', array(), '1.0.0');
 
     //Main stylesheet
-    wp_enqueue_style('main', get_stylesheet_uri(), array('normalize'), '1.0.17');
+    wp_enqueue_style('main', get_stylesheet_uri(), array('normalize'), '1.0.18');
 
     /** Load main JavaScript files */
-    wp_enqueue_script('scripts', SPARTACUS_DIR_URI . '/js/scripts.js', array('jquery'), '1.0.2', true);
+    wp_enqueue_script('scripts', SPARTACUS_DIR_URI . '/js/scripts.js', array('jquery'), '1.0.3', true);
 
     /** Load table of contents files */
-    wp_enqueue_script('toc-js', SPARTACUS_DIR_URI . '/js/jquery.toc.min.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('toc-js', SPARTACUS_DIR_URI . '/js/jquery.toc.min.js', array('jquery'), '1.0.3', true);
 }
 
 //Create the menus

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spartacus\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-07 10:25+0000\n"
+"POT-Creation-Date: 2020-08-07 10:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -78,7 +78,6 @@ msgid "Read more"
 msgstr ""
 
 #: search.php:37
-msgctxt "Nekas netika atrasts"
 msgid "Nothing Found"
 msgstr ""
 
@@ -107,7 +106,6 @@ msgid "Archive by category"
 msgstr ""
 
 #: inc/breadcrumbs.php:28
-msgctxt "Meklēšanas rezultāti priekš"
 msgid "Search results for"
 msgstr ""
 

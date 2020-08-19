@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spartacus\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-07 10:26+0000\n"
-"PO-Revision-Date: 2020-08-18 12:19+0000\n"
-"Last-Translator: admin\n"
+"POT-Creation-Date: 2020-08-19 10:38+0000\n"
+"PO-Revision-Date: 2020-08-19 10:38+0000\n"
+"Last-Translator: Kristaps Ritins\n"
 "Language-Team: Latvian\n"
 "Language: lv\n"
 "Plural-Forms: nplurals=3; plural=n % 10 == 1 && n % 100 != 11 ? 0 : n != 0 ? "
@@ -75,19 +75,19 @@ msgstr "Lapas saturs"
 msgid "Page With Sidebar"
 msgstr ""
 
-#: search.php:27
+#: search.php:26
 msgid "Read more"
 msgstr "Lasīt vairāk"
 
-#: search.php:37
+#: search.php:36
 msgid "Nothing Found"
 msgstr "Nekas netika atrasts"
 
-#: search.php:38
+#: search.php:37
 msgid "Sorry, no page or post matched your search criteria."
 msgstr "Atvaino, bet nekas netika atrasts pēc taviem kritērijiem."
 
-#: search.php:39
+#: search.php:38
 msgid "Try again with different keywords"
 msgstr " Lūdzu, atkārto meklēšanu ar citiem atslēgas vārdiem."
 
@@ -98,30 +98,6 @@ msgstr "Par autoru"
 #: inc/author-box.php:57
 msgid "All posts from"
 msgstr "Visi raksti no"
-
-#: inc/breadcrumbs.php:8
-msgid "Home"
-msgstr "Sākums"
-
-#: inc/breadcrumbs.php:26
-msgid "Archive by category"
-msgstr ""
-
-#: inc/breadcrumbs.php:28
-msgid "Search results for"
-msgstr "Meklēšanas rezultāti priekš"
-
-#: inc/breadcrumbs.php:89
-msgid "Posts tagged"
-msgstr ""
-
-#: inc/breadcrumbs.php:93
-msgid "Articles posted by"
-msgstr "Raksti no"
-
-#: inc/breadcrumbs.php:95
-msgid "404"
-msgstr ""
 
 #. Name of the theme
 msgid "Spartacus"
