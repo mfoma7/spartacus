@@ -769,7 +769,7 @@ i.icon-up-open {
         flex: 0 0 calc(70% - 2rem);
         background: var(--white);
         padding: 1rem 3rem;
-        box-shadow: var(--boxShadow);
+        border: 1px #eaeaea solid;
         border-radius: .5rem;
     }
     .with-sidebar .sidebar {
@@ -1789,7 +1789,7 @@ ul {
     border-radius: .5rem .5rem 0 0;
     box-shadow: 0 .4rem 1rem rgba(0, 0, 0, 0.10);
     min-height: 4.5rem;
-    padding:1rem;
+    padding: 1rem;
 }
 
 .pages-wrap-header img {
