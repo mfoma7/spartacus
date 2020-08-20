@@ -80,7 +80,7 @@ function spartacus_setup()
     add_theme_support('post-thumbnails');
     //Add custom logo
     add_theme_support('custom-logo');
-    
+
     //Load text domain for translations
     load_theme_textdomain('spartacus', TEMPLATE_DIR . '/languages');
     //Add title tag
