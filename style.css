@@ -5,7 +5,7 @@ Author: KR
 Author URI: https://yoursite.lv/
 Description: Custom casino theme
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
-Version: 1.0.21
+Version: 1.0.22
 Requires at least: 5.0
 Tested up to: 5.4
 Requires PHP: 7.0
@@ -1383,11 +1383,9 @@ ol>li {
     /* Create a positioning context */
     margin: 0 0 1.5rem 2rem;
     /* Give each list item a left margin to make room for the numbers */
-    padding: 4px 8px;
+    padding: 4px 24px;
     /* Add some spacing around the content */
     list-style: none;
-    /* Disable the normal item numbering */
-    border-top: 2px solid var(--olBg);
 }
 
 ol>li:before {
@@ -1396,22 +1394,22 @@ ol>li:before {
     counter-increment: li;
     /* Increment the counter by 1 */
     /* Position and style the number */
+    width:44px;
+    height: 44px;
     position: absolute;
-    top: -2px;
-    left: -2em;
+    top: -0.5rem;
+    left: -2.5rem;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 2em;
-    /* Some space between the number and the content in browsers that support
-       generated content but not positioning it (Camino 2 is one example) */
-    margin-right: 8px;
-    padding: 4px;
-    border-top: 2px solid var(--olBg);
-    color: #fff;
-    background: var(--olBg);
+    color: #000;
+    background-image: url('img/icons/icons8-chip-44.png');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
     font-weight: bold;
-    text-align: center;
 }
 
 li ol, li ul {
@@ -1428,17 +1426,16 @@ ul {
     list-style: none;
 }
 
-/* .page-content ul li::before {
-    content: "";
-    background-image: url(img/icons/poker-chip.png);
-    background-size: contain;
-    display: inline-block;
-    width: 1.2em;
-    height: 1.2em;
-    position: relative;
-    top: 0.1rem;
-    margin-right: 0.2rem;
-} */
+@media (max-width:767px) {
+    ol>li:before {
+        position: relative;
+        margin-bottom: 1.2rem;
+    }
+
+    ol>li {
+        padding:.4rem;
+    }
+}
 
 /* Sidebar news post widget */
 
