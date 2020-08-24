@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spartacus\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-24 19:55+0000\n"
+"POT-Creation-Date: 2020-08-24 19:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -74,7 +74,6 @@ msgid "Page With Sidebar"
 msgstr ""
 
 #: page-with-sidebar.php:13 page.php:8
-msgctxt "Atjaunots: "
 msgid "Updated: "
 msgstr ""
 
