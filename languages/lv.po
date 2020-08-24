@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Spartacus\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-19 10:38+0000\n"
-"PO-Revision-Date: 2020-08-19 10:38+0000\n"
+"PO-Revision-Date: 2020-08-24 13:17+0000\n"
 "Last-Translator: Kristaps Ritins\n"
 "Language-Team: Latvian\n"
 "Language: lv\n"
@@ -69,7 +69,7 @@ msgstr ""
 
 #: front-page.php:20
 msgid "Page Content"
-msgstr "Lapas saturs"
+msgstr "Satura rādītājs"
 
 #. Name of the template
 msgid "Page With Sidebar"
