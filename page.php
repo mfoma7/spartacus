@@ -1,6 +1,14 @@
 <?php get_header(); ?>
 <div class="header-block-bg" <?php if (get_field('spartacus_header_block_bg', 'options')) echo 'style="background-color:' . get_field('spartacus_header_block_bg', 'options') . '"';  ?>>
     <div class="header-block">
+        <div class="container">
+            <div id="breadcrumbs">
+                <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
+                <div class="last-modified">
+                    <span> <?php _e("Updated: ", "spartacus") . the_modified_date("d-m-y"); ?></span>
+                </div>
+            </div>
+        </div>
         <div class="page-heading container <?php if (get_field('image_after_heading')) {
                                                 echo "heading-image";
                                             } ?>">

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spartacus\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-07 10:26+0000\n"
+"POT-Creation-Date: 2020-08-19 10:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -73,19 +73,19 @@ msgstr ""
 msgid "Page With Sidebar"
 msgstr ""
 
-#: search.php:27
+#: search.php:26
 msgid "Read more"
 msgstr ""
 
-#: search.php:37
+#: search.php:36
 msgid "Nothing Found"
 msgstr ""
 
-#: search.php:38
+#: search.php:37
 msgid "Sorry, no page or post matched your search criteria."
 msgstr ""
 
-#: search.php:39
+#: search.php:38
 msgid "Try again with different keywords"
 msgstr ""
 
@@ -95,30 +95,6 @@ msgstr ""
 
 #: inc/author-box.php:57
 msgid "All posts from"
-msgstr ""
-
-#: inc/breadcrumbs.php:8
-msgid "Home"
-msgstr ""
-
-#: inc/breadcrumbs.php:26
-msgid "Archive by category"
-msgstr ""
-
-#: inc/breadcrumbs.php:28
-msgid "Search results for"
-msgstr ""
-
-#: inc/breadcrumbs.php:89
-msgid "Posts tagged"
-msgstr ""
-
-#: inc/breadcrumbs.php:93
-msgid "Articles posted by"
-msgstr ""
-
-#: inc/breadcrumbs.php:95
-msgid "404"
 msgstr ""
 
 #. Name of the theme

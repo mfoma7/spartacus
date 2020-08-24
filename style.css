@@ -610,6 +610,7 @@ i.icon-up-open {
 }
 
 /** ------- Header Block ------- **/
+
 .header-block-bg {
     background-color: var(--headerBlockBg);
 }
@@ -807,18 +808,15 @@ i.icon-up-open {
 }
 
 #breadcrumbs {
-    color: var(--black);
-    font-size: 0.9rem;
-    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#breadcrumbs a {
-    color: var(--black);
-    font-size: 0.9rem;
-}
-
-.page #breadcrumbs, .page #breadcrumbs a, .single-casino-review #breadcrumbs, .single-casino-review #breadcrumbs a {
-    color: var(--white);
+#breadcrumbs nav a, #breadcrumbs nav span, #breadcrumbs .last-modified {
+    font-size: 1.2rem;
+    color: #fff;
 }
 
 /** ------- Header Search ------- **/
@@ -1400,7 +1398,7 @@ ol>li:before {
     counter-increment: li;
     /* Increment the counter by 1 */
     /* Position and style the number */
-    width:44px;
+    width: 44px;
     height: 44px;
     position: absolute;
     top: -0.5rem;
@@ -1437,9 +1435,8 @@ ul {
         position: relative;
         margin-bottom: 1.2rem;
     }
-
     ol>li {
-        padding:.4rem;
+        padding: .4rem;
     }
 }
 
