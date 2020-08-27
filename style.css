@@ -755,7 +755,7 @@ i.icon-up-open {
 
 /* Make sidebar sticky */
 
-.sidebar-content-wrap {
+.sidebar-sticky {
     position: sticky;
     top: .5rem;
 }

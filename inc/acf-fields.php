@@ -847,6 +847,25 @@ if (function_exists('acf_add_local_field_group')) :
                 ),
                 'default_value' => '',
             ),
+            array(
+                'key' => 'field_5f4792cf6d202',
+                'label' => 'Enable sticky sidebar',
+                'name' => 'spartacus_enable_sticky_sidebar',
+                'type' => 'true_false',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'message' => '',
+                'default_value' => 0,
+                'ui' => 1,
+                'ui_on_text' => 'Enable',
+                'ui_off_text' => 'Disable',
+            ),
         ),
         'location' => array(
             array(
