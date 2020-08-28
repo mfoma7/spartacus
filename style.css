@@ -1387,7 +1387,7 @@ ol>li {
     /* Create a positioning context */
     margin: 0 0 1.5rem 2rem;
     /* Give each list item a left margin to make room for the numbers */
-    padding: 4px 24px;
+    padding: .4rem 1.2rem;
     /* Add some spacing around the content */
     list-style: none;
 }
@@ -1398,21 +1398,21 @@ ol>li:before {
     counter-increment: li;
     /* Increment the counter by 1 */
     /* Position and style the number */
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
     position: absolute;
-    top: -0.5rem;
+    top: initial;
     left: -2.5rem;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    color: #000;
-    background-image: url('img/icons/icons8-chip-44.png');
+    color: #fff;
+    background-image: url('img/icons/poker-chip.png');
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
