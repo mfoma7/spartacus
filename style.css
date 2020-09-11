@@ -295,10 +295,6 @@ img.aligncenter {
     margin-top: .3rem;
 }
 
-.main-menu .current_page_item {
-    font-weight: bold;
-}
-
 .main-menu a {
     color: var(--navbarElementsCol);
     font-size: 1.4rem;
@@ -306,6 +302,54 @@ img.aligncenter {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+.main-menu {
+    position: relative;
+}
+
+.main-menu .icon-angle-down {
+    color:#fff;
+    position: absolute;
+    right: -.5rem;
+}
+
+.main-menu .icon-angle-down:hover {
+    cursor: pointer;
+}
+
+.main-menu .sub-menu li:not(:last-child) {
+    border-bottom: 1px solid #404040;;
+}
+
+.main-menu .menu-item-has-children {
+    position: relative;
+}
+
+.main-menu .sub-menu {
+    position: absolute;
+    top:4rem;
+    left:0;
+    background-color:#333;
+    color:#fff;
+    border-top:4px solid #fff;
+    line-height: 1.4rem;
+    z-index: 100;
+}
+
+.main-menu .sub-menu a {
+    padding:0;
+}
+
+.main-menu .sub-menu li {
+    margin:0!important;
+    padding:1rem 1.5rem;
+    min-width: 18rem;
+}
+
+.main-menu .sub-menu {
+    display: none;
+}
+
 
 @media (min-width: 768px) {
     .main-menu {
@@ -317,7 +361,7 @@ img.aligncenter {
         align-items: center;
     }
     .main-menu li:not(:last-of-type) {
-        margin-right: 3.5rem;
+        margin-right: 4rem;
     }
 }
 
@@ -836,7 +880,7 @@ i.icon-up-open {
 .search-header {
     position: absolute;
     width: 100%;
-    top: 6.5rem;
+    top: 9.8rem;
     left: 0;
     display: none;
     z-index: 99999;
@@ -1824,3 +1868,4 @@ ul {
     line-height: 1.6rem;
     font-weight: normal!important;
 }
+

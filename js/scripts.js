@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
     //jQuery function for showing submenu items in the sidenav
-    $(".menu-item-has-children").on("click", function () {
+    $("#slideout-menu .menu-item-has-children").on("click", function () {
         $(".sub-menu", this).slideToggle();
     });
 
@@ -49,6 +49,15 @@ jQuery(document).ready(function ($) {
     //Toggle terms of content in front page
     $('.toc-toggle span').click(function () {
         $('.toc-hp').slideToggle();
+    });
+
+    // Main menu dropdown
+    var $menu_item = $('.menu-item-has-children');
+
+    $menu_item.append('<i class="icon-angle-down"></i>');
+
+    $(".main-menu .menu-item-has-children .icon-angle-down").on("click", function () {
+        $(this).siblings(".sub-menu").slideToggle();
     });
 
 });

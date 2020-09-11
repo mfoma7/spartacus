@@ -6,13 +6,6 @@
 
         </div>
         <div class="mid-footer">
-            <div class="mid-footer__extra">
-                <span>
-                    <?php if (the_field('footer_extra_block', 'options')) : ?>
-                        <?php echo the_field('footer_extra_block', 'options'); ?>
-                    <?php endif; ?>
-                </span>
-            </div>
             <div class="mid-footer__images">
                 <?php include_once 'template-parts/footer/footer-images.php'; ?>
             </div>
@@ -23,6 +16,13 @@
             </div>
             <div class="mid-footer__socials">
                 <?php include_once 'template-parts/footer/footer-socials.php'; ?>
+            </div>
+            <div class="mid-footer__extra">
+                <span>
+                    <?php if (the_field('footer_extra_block', 'options')) : ?>
+                        <?php echo the_field('footer_extra_block', 'options'); ?>
+                    <?php endif; ?>
+                </span>
             </div>
         </div>
         <div class="lower-footer">
