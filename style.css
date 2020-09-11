@@ -572,6 +572,7 @@ i.icon-up-open {
 .mid-footer__text {
     font-size: 1.1rem;
     flex: 0 0 60%;
+    text-align: center;
 }
 
 .mid-footer__text p {
@@ -972,6 +973,10 @@ i.icon-up-open {
 .mobile-lower-header .main-menu .menu-icon {
     position: relative;
     margin: 0 0 .5rem 0;
+}
+
+.mobile-lower-header .sub-menu, .mobile-lower-header .icon-angle-down {
+    display: none;
 }
 
 /* Author Box */

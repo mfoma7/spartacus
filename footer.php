@@ -14,15 +14,15 @@
                     <p><?php echo the_field('footer_text', 'options'); ?></p>
                 <?php endif; ?>
             </div>
-            <div class="mid-footer__socials">
-                <?php include_once 'template-parts/footer/footer-socials.php'; ?>
-            </div>
             <div class="mid-footer__extra">
                 <span>
                     <?php if (the_field('footer_extra_block', 'options')) : ?>
                         <?php echo the_field('footer_extra_block', 'options'); ?>
                     <?php endif; ?>
                 </span>
+            </div>
+            <div class="mid-footer__socials">
+                <?php include_once 'template-parts/footer/footer-socials.php'; ?>
             </div>
         </div>
         <div class="lower-footer">
