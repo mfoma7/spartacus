@@ -52,7 +52,7 @@ jQuery(document).ready(function ($) {
     });
 
     // Main menu dropdown
-    var $menu_item = $('.menu-item-has-children');
+    var $menu_item = $('.main-menu .menu-item-has-children');
 
     $menu_item.append('<i class="icon-angle-down"></i>');
 
