@@ -979,6 +979,10 @@ i.icon-up-open {
     display: none;
 }
 
+#slideout-menu .icon-angle-down {
+    display: none;
+}
+
 /* Author Box */
 
 .author_bio_section {
