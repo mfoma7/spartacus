@@ -214,3 +214,27 @@ add_action('after_setup_theme', 'spartacus_setup');
 
 //Unregister widgets
 add_action('widgets_init', 'spartacus_unregister_widgets');
+
+//Create Person schema
+add_action('wp_head', 'spartacus_schema');
+
+
+//Function that adds person schema to pages and posts
+function spartacus_schema()
+{
+    global $post;
+
+    $display_name = get_the_author_meta('display_name', $post->post_author);
+
+    $schema = array(
+        "@context" => "http://schema.org",
+        "@type" => "Person",
+        "name" => $display_name,
+        "knownAbout" => "Gambling, Online Casinos, Casino Bonuses"
+    );
+
+    var_dump($display_name);
+
+    if (((is_single() && isset($post->post_author)) || (is_page() && isset($post->post_author))))
+        echo '<script type="application/ld+json">' . json_encode($schema) . '</script>';
+}
