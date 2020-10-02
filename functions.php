@@ -233,8 +233,6 @@ function spartacus_schema()
         "knownAbout" => "Gambling, Online Casinos, Casino Bonuses"
     );
 
-    var_dump($display_name);
-
     if (((is_single() && isset($post->post_author)) || (is_page() && isset($post->post_author))))
         echo '<script type="application/ld+json">' . json_encode($schema) . '</script>';
 }
