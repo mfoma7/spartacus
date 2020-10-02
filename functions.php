@@ -230,7 +230,7 @@ function spartacus_schema()
         "@context" => "http://schema.org",
         "@type" => "Person",
         "name" => $display_name,
-        "knownAbout" => "Gambling, Online Casinos, Casino Bonuses"
+        "knowsAbout" => "Gambling, Online Casinos, Casino Bonuses"
     );
 
     if (((is_single() && isset($post->post_author)) || (is_page() && isset($post->post_author))))
