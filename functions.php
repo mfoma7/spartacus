@@ -226,11 +226,15 @@ function spartacus_schema()
 
     $display_name = get_the_author_meta('display_name', $post->post_author);
 
+    $author_id = get_the_author_meta('ID', $post->post_author);
+
+    $knows_about = get_field('author_knows_about', 'user_' . $author_id, 'options');
+
     $schema = array(
         "@context" => "http://schema.org",
         "@type" => "Person",
         "name" => $display_name,
-        "knowsAbout" => "Gambling, Online Casinos, Casino Bonuses"
+        "knowsAbout" => $knows_about,
     );
 
     if (((is_single() && isset($post->post_author)) || (is_page() && isset($post->post_author))))
