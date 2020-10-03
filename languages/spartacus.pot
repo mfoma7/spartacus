@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spartacus\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-24 19:58+0000\n"
+"POT-Creation-Date: 2020-10-03 12:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -13,85 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.4.0; wp-5.4.2"
-
-#: 404.php:14
-msgid "PAGE NOT FOUND"
-msgstr ""
-
-#: 404.php:15
-msgid ""
-"The page you are looking for might have been removed, had its name changed "
-"or is temporarily unavailable"
-msgstr ""
-
-#: 404.php:16
-msgid "Go to the homepage"
-msgstr ""
-
-#: author.php:16
-msgid "Author pages"
-msgstr ""
-
-#: author.php:35 author.php:69 author.php:106 author.php:145
-msgid "Read More"
-msgstr ""
-
-#: author.php:40
-msgid "No pages"
-msgstr ""
-
-#: author.php:50
-msgid "Author articles"
-msgstr ""
-
-#: author.php:74
-msgid "No articles"
-msgstr ""
-
-#: author.php:84
-msgid "Author casino reviews"
-msgstr ""
-
-#: author.php:111
-msgid "No casino reviews"
-msgstr ""
-
-#: author.php:123
-msgid "Author slot reviews"
-msgstr ""
-
-#: author.php:150
-msgid "No slot reviews"
-msgstr ""
-
-#: front-page.php:20
-msgid "Page Content"
-msgstr ""
-
-#. Name of the template
-msgid "Page With Sidebar"
-msgstr ""
-
-#: page-with-sidebar.php:13 page.php:8
-msgid "Updated: "
-msgstr ""
-
-#: search.php:26
-msgid "Read more"
-msgstr ""
-
-#: search.php:36
-msgid "Nothing Found"
-msgstr ""
-
-#: search.php:37
-msgid "Sorry, no page or post matched your search criteria."
-msgstr ""
-
-#: search.php:38
-msgid "Try again with different keywords"
-msgstr ""
+"X-Loco-Version: 2.4.3; wp-5.5.1"
 
 #: inc/author-box.php:45
 msgid "About author"
@@ -101,12 +23,28 @@ msgstr ""
 msgid "All posts from"
 msgstr ""
 
-#. Name of the theme
-msgid "Spartacus"
+#: author.php:50
+msgid "Author articles"
+msgstr ""
+
+#: author.php:84
+msgid "Author casino reviews"
+msgstr ""
+
+#: author.php:16
+msgid "Author pages"
+msgstr ""
+
+#: author.php:123
+msgid "Author slot reviews"
 msgstr ""
 
 #. Description of the theme
 msgid "Custom casino theme"
+msgstr ""
+
+#: 404.php:16
+msgid "Go to the homepage"
 msgstr ""
 
 #. URI of the theme
@@ -116,4 +54,66 @@ msgstr ""
 
 #. Author of the theme
 msgid "KR"
+msgstr ""
+
+#: author.php:74
+msgid "No articles"
+msgstr ""
+
+#: author.php:111
+msgid "No casino reviews"
+msgstr ""
+
+#: author.php:40
+msgid "No pages"
+msgstr ""
+
+#: author.php:150
+msgid "No slot reviews"
+msgstr ""
+
+#: search.php:36
+msgid "Nothing Found"
+msgstr ""
+
+#: front-page.php:20
+msgid "Page Content"
+msgstr ""
+
+#: 404.php:14
+msgid "PAGE NOT FOUND"
+msgstr ""
+
+#. Name of the template
+msgid "Page With Sidebar"
+msgstr ""
+
+#: author.php:35 author.php:69 author.php:106 author.php:145
+msgid "Read More"
+msgstr ""
+
+#: search.php:26
+msgid "Read more"
+msgstr ""
+
+#: search.php:37
+msgid "Sorry, no page or post matched your search criteria."
+msgstr ""
+
+#. Name of the theme
+msgid "Spartacus"
+msgstr ""
+
+#: 404.php:15
+msgid ""
+"The page you are looking for might have been removed, had its name changed "
+"or is temporarily unavailable"
+msgstr ""
+
+#: search.php:38
+msgid "Try again with different keywords"
+msgstr ""
+
+#: page-with-sidebar.php:13 page.php:8
+msgid "Updated: "
 msgstr ""
