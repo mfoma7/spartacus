@@ -4,7 +4,7 @@ if (function_exists('acf_add_local_field_group')) :
 
     acf_add_local_field_group(array(
         'key' => 'group_5eff061a70593',
-        'title' => 'Author Page Information',
+        'title' => 'Spartacus Author Information',
         'fields' => array(
             array(
                 'key' => 'field_5eff0b6dcdc20',
@@ -135,7 +135,7 @@ if (function_exists('acf_add_local_field_group')) :
                 array(
                     'param' => 'user_role',
                     'operator' => '==',
-                    'value' => 'all',
+                    'value' => 'author',
                 ),
             ),
         ),
@@ -151,7 +151,7 @@ if (function_exists('acf_add_local_field_group')) :
 
     acf_add_local_field_group(array(
         'key' => 'group_5efeeea29ab6b',
-        'title' => 'Footer Options',
+        'title' => 'Spartacus Footer Options',
         'fields' => array(
             array(
                 'key' => 'field_5efeeefc551db',
@@ -462,7 +462,7 @@ if (function_exists('acf_add_local_field_group')) :
 
     acf_add_local_field_group(array(
         'key' => 'group_5f0ed76bc94f8',
-        'title' => 'Front page elements',
+        'title' => 'Spartacus Front Page Blocks',
         'fields' => array(
             array(
                 'key' => 'field_5f0ed79df55c5',
@@ -591,7 +591,7 @@ if (function_exists('acf_add_local_field_group')) :
 
     acf_add_local_field_group(array(
         'key' => 'group_5ef09bc278375',
-        'title' => 'Header block',
+        'title' => 'Spartacus Header block',
         'fields' => array(
             array(
                 'key' => 'field_5efeeb5e469f7',
@@ -633,7 +633,7 @@ if (function_exists('acf_add_local_field_group')) :
                 'label' => 'Image after heading text',
                 'name' => 'image_after_heading',
                 'type' => 'image',
-                'instructions' => 'This image will show after header block heading text',
+                'instructions' => 'This image will show after header block heading text. Use to add little flags or some icons',
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
@@ -674,7 +674,7 @@ if (function_exists('acf_add_local_field_group')) :
 
     acf_add_local_field_group(array(
         'key' => 'group_5eec9447c96e9',
-        'title' => 'Menu Icons',
+        'title' => 'Spartacus Menu Icons',
         'fields' => array(
             array(
                 'key' => 'field_5eec944ddc715',
@@ -722,7 +722,7 @@ if (function_exists('acf_add_local_field_group')) :
 
     acf_add_local_field_group(array(
         'key' => 'group_5f057e4316df6',
-        'title' => 'Pages Widget',
+        'title' => 'Spartacus Pages Widget',
         'fields' => array(
             array(
                 'key' => 'field_5f3be9196777b',
@@ -811,7 +811,7 @@ if (function_exists('acf_add_local_field_group')) :
 
     acf_add_local_field_group(array(
         'key' => 'group_5f0c6eec15855',
-        'title' => 'Theme Settings',
+        'title' => 'Spartacus Settings',
         'fields' => array(
             array(
                 'key' => 'field_5f0d632e240c5',
