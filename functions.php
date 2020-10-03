@@ -55,15 +55,15 @@ require_once TEMPLATE_DIR . '/inc/widgets/spartacus-widget-show-post.php';
 if (function_exists('acf_add_options_page')) {
 
     acf_add_options_page(array(
-        'page_title'     => 'Theme General Settings',
-        'menu_title'    => 'Theme Settings',
+        'page_title'     => 'General Settings',
+        'menu_title'    => 'Spartacus Settings',
         'menu_slug'     => 'theme-general-settings',
         'capability'    => 'edit_posts',
         'redirect'        => false
     ));
 
     acf_add_options_sub_page(array(
-        'page_title'     => 'Theme Footer Settings',
+        'page_title'     => 'Spartacus Footer',
         'menu_title'    => 'Footer',
         'parent_slug'    => 'theme-general-settings',
     ));
@@ -122,7 +122,7 @@ function spartacus_scripts()
     wp_enqueue_style('animate', SPARTACUS_DIR_URI . '/css/animate.css', array(), '1.0.0');
 
     //Main stylesheet
-    wp_enqueue_style('main', get_stylesheet_uri(), array('normalize'), '1.0.35');
+    wp_enqueue_style('main', get_stylesheet_uri(), array('normalize'), '1.0.36');
 
     /** Load main JavaScript files */
     wp_enqueue_script('scripts', SPARTACUS_DIR_URI . '/js/scripts.js', array('jquery'), '1.0.6', true);
