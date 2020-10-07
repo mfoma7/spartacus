@@ -51,13 +51,11 @@ jQuery(document).ready(function ($) {
         $('.toc-hp').slideToggle();
     });
 
-    // Main menu dropdown
+    // Main menu - add icon to items with sub-menu
     var $menu_item = $('.main-menu .menu-item-has-children');
 
     $menu_item.append('<i class="icon-angle-down"></i>');
 
-    $(".main-menu .menu-item-has-children .icon-angle-down").on("click", function () {
-        $(this).siblings(".sub-menu").slideToggle();
-    });
+
 
 });

@@ -260,7 +260,7 @@ img.aligncenter {
 .logo {
     display: flex;
     justify-content: center;
-    margin-left: 3rem;
+    margin-left: -3rem;
 }
 
 .logo a {
@@ -283,9 +283,17 @@ img.aligncenter {
 
 /** ------- Menu ------- **/
 
-.menu-item {
+/* .menu-item {
     position: relative;
 }
+
+.main-menu {
+    position: relative;
+}
+
+.main-menu .menu-item-has-children {
+    position: relative;
+} */
 
 .main-menu .menu-icon {
     max-width: 2.5rem;
@@ -295,61 +303,46 @@ img.aligncenter {
     margin-top: .3rem;
 }
 
-.main-menu a {
+/* .main-menu a {
     color: var(--navbarElementsCol);
     font-size: 1.4rem;
     padding: .5rem 2rem;
     text-transform: uppercase;
     font-weight: bold;
-}
+} */
 
-.main-menu {
-    position: relative;
-}
-
-.main-menu .icon-angle-down {
-    color:#fff;
+/* .main-menu .sub-menu {
     position: absolute;
-    right: -.5rem;
-}
-
-.main-menu .icon-angle-down:hover {
-    cursor: pointer;
-}
-
-.main-menu .sub-menu li:not(:last-child) {
-    border-bottom: 1px solid #404040;;
-}
-
-.main-menu .menu-item-has-children {
-    position: relative;
-}
-
-.main-menu .sub-menu {
-    position: absolute;
-    top:4rem;
-    left:0;
-    background-color:#333;
-    color:#fff;
-    border-top:4px solid #fff;
+    top: 4rem;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    border-top: 4px solid #fff;
     line-height: 1.4rem;
     z-index: 100;
 }
 
+.sub-menu .menu-item-has-children .sub-menu {
+    position: absolute;
+    top: 0;
+    left: 18.2rem;
+    background-color: #333;
+    color: #fff;
+    line-height: 1.4rem;
+    z-index: 100;
+    border-top: none;
+    border-left: 4px solid #fff;
+}
+
 .main-menu .sub-menu a {
-    padding:0;
+    padding: 0;
 }
 
 .main-menu .sub-menu li {
-    margin:0!important;
-    padding:1rem 1.5rem;
+    margin: 0!important;
+    padding: 1rem 1.5rem;
     min-width: 18rem;
-}
-
-.main-menu .sub-menu {
-    display: none;
-}
-
+} */
 
 @media (min-width: 768px) {
     .main-menu {
@@ -361,7 +354,7 @@ img.aligncenter {
         align-items: center;
     }
     .main-menu li:not(:last-of-type) {
-        margin-right: 4rem;
+        margin-right: 5rem;
     }
 }
 
@@ -1874,3 +1867,167 @@ ul {
     font-weight: normal!important;
 }
 
+/* TEST MENU */
+
+.main-menu .menu-icon {
+    max-width: 2.5rem;
+    position: absolute;
+    z-index: 100;
+    margin-left: -3rem;
+    margin-top: .6rem;
+}
+
+/* nav */
+
+.menu, .menu ul, .menu li, .menu a {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    list-style: none;
+    display: block;
+    position: relative;
+}
+
+.menu ul {
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: -9999px;
+    z-index: 999;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+.menu li:hover>ul {
+    left: 0;
+    opacity: 1;
+    z-index: 1000;
+}
+
+.menu ul li:hover>ul {
+    top: 0;
+    left: 100%;
+}
+
+.menu li {
+    cursor: default;
+    float: left;
+    white-space: nowrap;
+}
+
+.menu ul li {
+    float: none;
+}
+
+.menu-item-has-children .icon-angle-down {
+    position: absolute;
+    top: 1rem;
+    right: -1rem;
+    color: #fff;
+    font-size: 14px;
+}
+
+.sub-menu .icon-angle-down {
+    top: .6rem;
+    right: .5rem;
+}
+
+/* .sub-menu .menu-item-has-children .icon-angle-down {
+    position: absolute;
+    top:0;
+    right:2rem;
+    color:#fff;
+    font-size: 14px;
+} */
+
+/* sub width */
+
+.sub-menu .menu-item {
+    width: 100%;
+}
+
+ul.sub-menu {
+    border-top: 3px solid #fff;
+}
+
+.menu ul {
+    min-width: 10em;
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    background: #555;
+}
+
+/* center */
+
+.nav-center {
+    float: right;
+    right: 50%;
+}
+
+.nav-center>li {
+    left: 50%;
+}
+
+/* root */
+
+.menu a {
+    padding: 0 10px;
+    color: rgb(241, 241, 241);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+/* root: active */
+
+.menu>li>.nav-active {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* root: hover/persistence */
+
+.menu a:hover, .menu a:focus, .menu li:hover a {
+    color: #FFF;
+}
+
+/* 2 */
+
+.menu li li a, .menu li:hover li a {
+    padding: 8px 10px;
+    background: #555;
+    color: #FFF;
+    font-size: 12px;
+    line-height: normal;
+}
+
+/* 2: hover/persistence */
+
+.menu li:hover li a:hover, .menu li:hover li a:focus, .menu li:hover li:hover a {
+    background: #444;
+}
+
+/* 3 */
+
+.menu li:hover li:hover li a {
+    background: #444;
+}
+
+/* 3: hover/persistence */
+
+.menu li:hover li:hover li a:hover, .menu li:hover li:hover li a:focus, .menu li:hover li:hover li:hover a {
+    background: #333;
+}
+
+/* 4 */
+
+.menu li:hover li:hover li:hover li a {
+    background: #333;
+}
+
+/* 4: hover */
+
+.menu li:hover li:hover li:hover li a:hover, .menu li:hover li:hover li:hover li a:focus {
+    background: #222;
+}
