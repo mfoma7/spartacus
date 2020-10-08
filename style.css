@@ -1904,7 +1904,7 @@ ul {
 }
 
 .main-menu .menu ul li:hover>ul {
-    top: 0;
+    top: -.3rem;
     left: 100%;
 }
 
