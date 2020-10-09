@@ -1,10 +1,13 @@
 <?php
 
-/**
- * Template Name: Archive Page
- */
 get_header(); ?>
-<main class="container page section with-sidebar">
+<main class="container page section 
+<?php if (get_field('posts_disable_sidebar', 'options')) {
+    echo 'no-sidebar';
+} else {
+    echo 'with-sidebar';
+}
+?>">
     <div class="archive-content">
         <?php while (have_posts()) : the_post(); ?>
             <div class="post_card">
@@ -35,6 +38,8 @@ get_header(); ?>
             </div>
         <?php endwhile; ?>
     </div>
-    <?php get_sidebar(); ?>
+    <?php if (!get_field('posts_disable_sidebar', 'options')) : ?>
+        <?php get_sidebar(); ?>
+    <?php endif; ?>
 </main>
 <?php get_footer(); ?>
