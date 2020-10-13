@@ -650,6 +650,15 @@ i.icon-up-open {
     font-size: 1.2rem;
 }
 
+.lower-footer__flag {
+    display: flex;
+    align-items: center;
+}
+
+.dmca-badge img{
+    max-width: 7rem!important;
+}
+
 .lower-footer__copyright span {
     font-weight: bold;
 }

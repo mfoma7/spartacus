@@ -39,6 +39,11 @@
                     ?>
                     <img src="<?php echo $flag_img['url']; ?>" alt="<?php echo $flag_img['alt']; ?>">
                 <?php endif; ?>
+                <?php if (get_field('dmca_badge', 'options')) : ?>
+                    <div class="dmca-badge">
+                        <?php the_field('dmca_badge', 'options'); ?>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>
