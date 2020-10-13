@@ -16,7 +16,7 @@ get_header(); ?>
                         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                         <div><?php _e('Author: ', 'spartacus'); ?><?php echo get_the_author(); ?></div>
                         <div class="post_date"><?php _e('Post added: ');
-                                                the_date('d/m/y'); ?></div>
+                                                echo get_the_date('d/m/y'); ?></div>
                     </div>
                     <div class="post_desc">
                         <div class="text">
