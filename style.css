@@ -2084,6 +2084,8 @@ ul {
 .post_card .info_section .post_header h2 {
     color: black;
     font-weight: bold;
+    white-space: nowrap;
+    font-size: 2.2rem;
 }
 
 .post_card .info_section .post_header div {
