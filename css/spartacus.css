@@ -64,6 +64,18 @@ body {
     font-family: var(--mainFont);
     font-size: 1.6rem;
     line-height: 2;
+    animation: fadeInAnimation ease .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #panel {
@@ -643,7 +655,7 @@ i.icon-up-open {
     align-items: center;
 }
 
-.dmca-badge img{
+.dmca-badge img {
     max-width: 7rem!important;
 }
 
@@ -659,7 +671,7 @@ i.icon-up-open {
 
 .header-block {
     padding: 1rem 0 2rem;
-    background-image: url(img/header-pattern.png);
+    background-image: url(../img/header-pattern.png);
 }
 
 .header-blocks {
@@ -2182,7 +2194,7 @@ ul {
     .no-sidebar .archive-content .post_card {
         height: 300px;
         width: 590px;
-        margin:5px;
+        margin: 5px;
     }
     .no-sidebar .info_section {
         background: linear-gradient(to right, #e5e6e6 68%, transparent 100%);
