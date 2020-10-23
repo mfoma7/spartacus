@@ -116,7 +116,7 @@ function spartacus_scripts()
     //wp_enqueue_style('normalize', SPARTACUS_DIR_URI . '/css/normalize.css', array(), '8.0.1');
 
     //Main CSS
-    wp_enqueue_style('main', SPARTACUS_DIR_URI . '/css/spartacus.min.css', array(), '1.0.1');
+    wp_enqueue_style('main', SPARTACUS_DIR_URI . '/css/spartacus.min.css', array(), '1.0.2');
 
     //Fontello CSS
     wp_enqueue_style('fontello', SPARTACUS_DIR_URI . '/css/fontello/css/fontello-embedded.css', array(), '1.0.0');
