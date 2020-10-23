@@ -24,7 +24,7 @@ get_header(); ?>
         </div>
         <div class="container">
             <div class="header-block__intro">
-                <div class="text-center text-primary">
+                <div class="text-primary">
                 </div>
                 <p><?php echo get_field('introduction'); ?></p>
             </div>
@@ -37,9 +37,7 @@ get_header(); ?>
 <main class="container page section with-sidebar">
     <div class="page-content">
         <?php while (have_posts()) : the_post(); ?>
-            <div class="text-center">
                 <?php the_content(); ?>
-            </div>
         <?php endwhile; ?>
     </div>
     <?php get_sidebar(); ?>

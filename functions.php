@@ -113,16 +113,13 @@ function spartacus_unregister_widgets()
 function spartacus_scripts()
 {
     //Normalize CSS
-    wp_enqueue_style('normalize', SPARTACUS_DIR_URI . '/css/normalize.css', array(), '8.0.1');
+    //wp_enqueue_style('normalize', SPARTACUS_DIR_URI . '/css/normalize.css', array(), '8.0.1');
+
+    //Main CSS
+    wp_enqueue_style('main', SPARTACUS_DIR_URI . '/css/spartacus.min.css', array(), '1.0.1');
 
     //Fontello CSS
     wp_enqueue_style('fontello', SPARTACUS_DIR_URI . '/css/fontello/css/fontello-embedded.css', array(), '1.0.0');
-
-    //Animate CSS
-    wp_enqueue_style('animate', SPARTACUS_DIR_URI . '/css/animate.css', array(), '1.0.0');
-
-    //Main stylesheet
-    wp_enqueue_style('main', get_stylesheet_uri(), array('normalize'), '1.0.45');
 
     /** Load main JavaScript files */
     wp_enqueue_script('scripts', SPARTACUS_DIR_URI . '/js/scripts.js', array('jquery'), '1.0.6', true);
