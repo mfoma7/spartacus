@@ -405,10 +405,10 @@ img.aligncenter {
 }
 
 #slideout-menu ul {
-    padding:0!important;
+    padding: 0!important;
 }
 
-#slideout-menu ul li{
+#slideout-menu ul li {
     list-style-type: none!important;
 }
 
@@ -1474,7 +1474,7 @@ ol>li:before {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: #fff;
-    background-image: url(../img/icons/poker-chip.png);
+    background-image: url('/wp-content/themes/spartacus/img/icons/poker-chip.png');
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -2213,19 +2213,20 @@ ul {
 }
 
 /* Gutenberg text block styles */
+
 .text-block {
-    padding:2rem;
+    padding: 2rem;
     border-radius: 1rem;
-    margin:2rem 0;
+    margin: 2rem 0;
 }
 
 .text-block p {
-    margin:0;
+    margin: 0;
     font-size: 1.6rem;
-    line-height:2.4rem;
+    line-height: 2.4rem;
 }
 
 .text-block .block-title {
-    margin:0;
+    margin: 0;
     margin-bottom: 1rem;
 }
