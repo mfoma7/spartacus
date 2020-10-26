@@ -405,7 +405,11 @@ img.aligncenter {
 }
 
 #slideout-menu ul {
-    list-style-type: none;
+    padding:0!important;
+}
+
+#slideout-menu ul li{
+    list-style-type: none!important;
 }
 
 #slideout-menu a {
