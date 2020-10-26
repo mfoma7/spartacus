@@ -51,6 +51,9 @@ require_once TEMPLATE_DIR . '/inc/author-box.php';
 //Include widget
 require_once TEMPLATE_DIR . '/inc/widgets/spartacus-widget-show-post.php';
 
+//Register gutenberg blocks
+require_once TEMPLATE_DIR . '/template-parts/gutenberg/register-blocks.php';
+
 //Create ACF Theme Options page
 if (function_exists('acf_add_options_page')) {
 

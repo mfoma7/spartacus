@@ -2207,3 +2207,21 @@ ul {
         margin-top: 5px;
     }
 }
+
+/* Gutenberg text block styles */
+.text-block {
+    padding:2rem;
+    border-radius: 1rem;
+    margin:2rem 0;
+}
+
+.text-block p {
+    margin:0;
+    font-size: 1.6rem;
+    line-height:2.4rem;
+}
+
+.text-block .block-title {
+    margin:0;
+    margin-bottom: 1rem;
+}
