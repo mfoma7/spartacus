@@ -2043,6 +2043,10 @@ ul {
 
 /* Post archive style */
 
+.archive-posts-title {
+    text-align: center;
+}
+
 .post_card {
     position: relative;
     display: block;
@@ -2165,7 +2169,7 @@ ul {
 @media screen and (max-width: 768px) {
     .post_card {
         width: 95%;
-        margin: 70px auto;
+        margin: 30px auto;
         min-height: 350px;
         height: auto;
     }
@@ -2175,11 +2179,18 @@ ul {
     }
     .post_header {
         width: 100%;
-        margin-top: 85px;
+        margin-top: 50px;
     }
     .post_desc {
         width: 100%;
+        padding:0 20px!important;
     }
+
+    .post_card .info_section .post_desc .text {
+        margin-top:0;
+        margin-bottom: 2rem;
+    }
+
     .info_section {
         background: linear-gradient(to top, #e5e6e6 50%, transparent 100%);
         display: inline-grid;
