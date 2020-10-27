@@ -8,8 +8,8 @@ get_header(); ?>
     echo 'with-sidebar';
 }
 ?>">
+    <h1 class="archive-posts-title"><?php _e('News', 'spartacus'); ?></h1>
     <div class="archive-content">
-        <h1 class="archive-posts-title"><?php _e('News', 'spartacus'); ?></h1>
         <?php while (have_posts()) : the_post(); ?>
             <div class="post_card">
                 <div class="info_section">
