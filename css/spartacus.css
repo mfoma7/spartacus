@@ -2088,8 +2088,7 @@ ul {
 .post_card .info_section .post_header h2 {
     color: black;
     font-weight: bold;
-    white-space: nowrap;
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 .post_card .info_section .post_header div {
@@ -2107,6 +2106,8 @@ ul {
 
 .post_card .info_section .post_desc .text {
     color: #545454;
+    line-height: 2.2rem;
+    margin-top: 1.5rem;
 }
 
 .post_card .info_section .post_cats {
@@ -2149,9 +2150,6 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-    .post_header {
-        width: 65%;
-    }
     .post_desc {
         width: 50%;
     }
