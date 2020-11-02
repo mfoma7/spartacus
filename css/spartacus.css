@@ -535,7 +535,7 @@ i.icon-up-open {
 }
 
 .footer-col ul li {
-    list-style-type: none;
+    list-style-type: none!important;
 }
 
 .site-footer h4 {
