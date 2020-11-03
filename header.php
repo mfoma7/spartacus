@@ -40,7 +40,9 @@
     </div>
     <!--.sidenav-wrapper-->
     <div id="panel">
-        <header class="site-header" <?php if (get_field('spartacus_menu_transparent', 'options')) : ?> style="background:<?php the_field('spartacus_menu_and_header_background', 'options'); ?>;background-image:url(<?php echo SPARTACUS_DIR_URI . '/img/pattern-optimized.png'; ?>);background-position-y:-73px;" <?php endif; ?>>
+        <header class="site-header" <?php $img = SPARTACUS_DIR_URI . '/img/pattern-optimized.png';
+                                    $col = get_field('spartacus_menu_and_header_background', 'options');
+                                    if (get_field('spartacus_menu_transparent', 'options')) echo "style=background-image:url({$img});background-position-y:-73px;background-color:{$col};"; ?>>
             <div class="nav-bar container">
                 <div id="nav-icon3" class="hamburger-menu toggle-button">
                     <span></span>
