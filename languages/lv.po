@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Spartacus\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-03 12:25+0000\n"
-"PO-Revision-Date: 2020-10-07 22:50+0000\n"
-"Last-Translator: Kristaps Ritins\n"
+"PO-Revision-Date: 2020-11-03 14:28+0000\n"
+"Last-Translator: \n"
 "Language-Team: Latvian\n"
 "Language: lv\n"
 "Plural-Forms: nplurals=3; plural=n % 10 == 1 && n % 100 != 11 ? 0 : n != 0 ? "
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.4.3; wp-5.5.1"
+"X-Loco-Version: 2.4.4; wp-5.5.3"
 
 #: inc/author-box.php:45
 msgid "About author"
@@ -78,7 +78,7 @@ msgstr "Nav rezultātu"
 
 #: front-page.php:20
 msgid "Page Content"
-msgstr "Lapas saturs"
+msgstr "Satura rādītājs"
 
 #: 404.php:14
 msgid "PAGE NOT FOUND"

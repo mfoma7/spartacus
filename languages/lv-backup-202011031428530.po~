@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Spartacus\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-03 12:25+0000\n"
-"PO-Revision-Date: 2020-10-07 22:49+0000\n"
+"PO-Revision-Date: 2020-10-07 22:50+0000\n"
 "Last-Translator: Kristaps Ritins\n"
 "Language-Team: Latvian\n"
 "Language: lv\n"
@@ -21,7 +21,7 @@ msgstr "Par autoru"
 
 #: inc/author-box.php:57
 msgid "All posts from"
-msgstr ""
+msgstr "Visi raksti no"
 
 #: author.php:50
 msgid "Author articles"
@@ -58,11 +58,11 @@ msgstr ""
 
 #: author.php:74
 msgid "No articles"
-msgstr ""
+msgstr "Nav rakstu"
 
 #: author.php:111
 msgid "No casino reviews"
-msgstr ""
+msgstr "Nav apskatu"
 
 #: author.php:40
 msgid "No pages"
@@ -70,11 +70,11 @@ msgstr "Nav lapas"
 
 #: author.php:150
 msgid "No slot reviews"
-msgstr ""
+msgstr "Nav apskatu"
 
 #: search.php:36
 msgid "Nothing Found"
-msgstr ""
+msgstr "Nav rezultātu"
 
 #: front-page.php:20
 msgid "Page Content"
@@ -115,7 +115,7 @@ msgstr ""
 
 #: search.php:38
 msgid "Try again with different keywords"
-msgstr ""
+msgstr "Mēģini atkal ar citiem atslēgas vārdiem"
 
 #: page-with-sidebar.php:13 page.php:8
 msgid "Updated: "
