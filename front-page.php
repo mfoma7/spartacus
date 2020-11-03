@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="header-block-bg front-page" <?php if (get_field('spartacus_header_block_bg', 'options')) echo 'style="background-color:' . get_field('spartacus_header_block_bg', 'options') . '"';  ?>>
+<div class="header-block-bg front-page" <?php if (get_field('spartacus_menu_transparent', 'options')) echo 'style="background-color:' . get_field('spartacus_menu_and_header_background', 'options') . '"';  ?>>
     <div class="header-block">
         <div class="page-heading container <?php if (is_front_page() && get_field('image_after_heading')) {
                                                 echo "heading-image";

@@ -514,9 +514,6 @@ i.icon-up-open {
         border-radius: 0;
         font-size: 24px;
     }
-    #back-to-top.mobile-menu-enabled {
-        bottom: 8rem;
-    }
 }
 
 /** ------- Footer ------- **/
@@ -958,51 +955,6 @@ i.icon-up-open {
     .search-header input {
         width: 75%;
     }
-}
-
-/* Mobile lower header */
-
-@media (min-width: 767px) {
-    .mobile-lower-header {
-        display: none;
-    }
-}
-
-.mobile-lower-header {
-    overflow: hidden;
-    background-color: var(--headerBlockBg);
-    position: fixed;
-    /* Set the navbar to fixed position */
-    bottom: 0;
-    /* Position the navbar at the top of the page */
-    width: 100%;
-    /* Full width */
-    z-index: 10;
-    padding: 1.5rem 2rem;
-}
-
-.mobile-lower-header .main-menu a {
-    font-size: 1rem;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-}
-
-.mobile-lower-header #menu-main-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.mobile-lower-header .main-menu .menu-icon {
-    position: relative;
-    margin: 0 0 .5rem 0;
-}
-
-.mobile-lower-header .sub-menu, .mobile-lower-header .icon-angle-down {
-    display: none;
 }
 
 /* Author Box */

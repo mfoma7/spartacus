@@ -31,30 +31,16 @@
         <?php endif; ?>
     </div>
     <!-- End Slideout menu -->
-    <?php if (get_field('spartacus_enable_mobile_lower_menu', 'options', 1)) : ?>
-        <div class="mobile-lower-header" <?php echo 'style="background-color:' . get_field('spartacus_header_block_bg', 'options') . '"' ?>>
-            <?php
-            $args = array(
-                'theme_location' => 'main-menu',
-                'container' => 'div',
-                'container_class' => 'main-menu',
-            );
-            wp_nav_menu($args);
-            ?>
-        </div>
-    <?php endif; ?>
-    <div id="back-to-top" class="back-to-top-button <?php
-                                                    if (get_field('spartacus_enable_mobile_lower_menu', 'options', 1)) {
-                                                        echo 'mobile-menu-enabled';
-                                                    }
-                                                    ?>">
+
+    <!-- Back to top button -->
+    <div id="back-to-top" class="back-to-top-button">
         <div class="btt-icon-wrap">
             <i class="icon-up-open"></i>
         </div>
     </div>
     <!--.sidenav-wrapper-->
     <div id="panel">
-        <header class="site-header">
+        <header class="site-header" <?php if (get_field('spartacus_menu_transparent', 'options')) : ?> style="background:<?php the_field('spartacus_menu_and_header_background', 'options'); ?>;background-image:url(<?php echo SPARTACUS_DIR_URI . '/img/pattern-optimized.png'; ?>);background-position-y:-73px;" <?php endif; ?>>
             <div class="nav-bar container">
                 <div id="nav-icon3" class="hamburger-menu toggle-button">
                     <span></span>
