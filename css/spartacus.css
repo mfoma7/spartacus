@@ -150,15 +150,12 @@ img {
     height   : auto;
 }
 
-.section p a {
+.section p a,
+.section span a {
     font-weight    : bold;
     color          : var(--sectionAnchor);
     letter-spacing : .1rem;
     text-decoration: underline;
-}
-
-.section a {
-    font-weight: bold;
 }
 
 /** ------- Utilities ------- **/
