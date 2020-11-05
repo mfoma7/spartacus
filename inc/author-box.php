@@ -43,11 +43,21 @@ function spartacus_author_box($content)
 
         $author_details = '<div class="author_socials_bar">
         <span class="author_detail">' . __('About author', 'spartacus') . '</span>
-        <span class="author_social_icons">
-        <a href="' . $linkedin . '"><img class="author-socials" src="' . SPARTACUS_DIR_URI . '/img/icons/linkedin.png' . '" alt="Linkedin" target="_blank" rel="nofollow"></a>
-        <a href="' . $instagram . '"><img class="author-socials" src="' . SPARTACUS_DIR_URI . '/img/icons/instagram.png' . '" alt="Instagram" target="_blank" rel="nofollow"></a>
-        <a href="' . $twitter . '"><img class="author-socials" src="' . SPARTACUS_DIR_URI . '/img/icons/twitter.png' . '" alt="Twitter" target="_blank" rel="nofollow"></a>
-        </span></div>';
+        <span class="author_social_icons">';
+
+        if (get_field('author_linkedin', 'user_' . $author_id, 'options')) {
+            $author_details .= '<a href="' . $linkedin . '"><img class="author-socials" src="' . SPARTACUS_DIR_URI . '/img/icons/linkedin.png' . '" alt="Linkedin" target="_blank" rel="nofollow"></a>';
+        }
+
+        if (get_field('author_instagram', 'user_' . $author_id, 'options')) {
+            $author_details .= '<a href="' . $instagram . '"><img class="author-socials" src="' . SPARTACUS_DIR_URI . '/img/icons/instagram.png' . '" alt="Instagram" target="_blank" rel="nofollow"></a>';
+        }
+
+        if (get_field('author_twitter', 'user_' . $author_id, 'options')) {
+            $author_details .= '<a href="' . $twitter . '"><img class="author-socials" src="' . SPARTACUS_DIR_URI . '/img/icons/twitter.png' . '" alt="Twitter" target="_blank" rel="nofollow"></a>';
+        }
+
+        $author_details .= '</span></div>';
 
         if (!empty($user_description) && !empty($display_name))
             // Author avatar and bio
