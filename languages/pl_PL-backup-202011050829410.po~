@@ -132,6 +132,7 @@ msgstr ""
 #: search.php:38
 msgid "Try again with different keywords"
 msgstr ""
+"Spróbuj ponownie, używając innych słów kluczowych\n"
 
 #: page-with-sidebar.php:13 page.php:8
 msgid "Updated: "
