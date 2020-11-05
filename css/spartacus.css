@@ -578,6 +578,13 @@ i.icon-up-open {
 .mid-footer__extra {
     width     : 100%;
     text-align: center;
+    font-size: 1.1rem;
+}
+
+.mid-footer__extra a {
+    color:rgb(199, 21, 21);
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .mid-footer__images {

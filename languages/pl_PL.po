@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spartacus\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-03 12:25+0000\n"
-"PO-Revision-Date: 2020-11-05 08:29+0000\n"
+"POT-Creation-Date: 2020-11-05 20:16+0000\n"
+"PO-Revision-Date: 2020-11-05 20:20+0000\n"
 "Last-Translator: \n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
@@ -15,6 +15,114 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.4.4; wp-5.5.3"
 
+#: 404.php:14
+msgid "PAGE NOT FOUND"
+msgstr ""
+"Strona nie znaleziona\n"
+
+#: 404.php:15
+msgid ""
+"The page you are looking for might have been removed, had its name changed "
+"or is temporarily unavailable"
+msgstr ""
+"Strona, której szukasz, mogła zostać usunięta, miała zmienioną nazwę lub "
+"jest tymczasowo niedostępna\n"
+
+#: 404.php:16
+msgid "Go to the homepage"
+msgstr ""
+"Przejdź do strony głównej\n"
+
+#: author.php:16
+msgid "Author pages"
+msgstr ""
+"Strony autorskie\n"
+
+#: author.php:35 author.php:69 author.php:106 author.php:145
+msgid "Read More"
+msgstr ""
+"Czytaj więcej\n"
+
+#: author.php:40
+msgid "No pages"
+msgstr ""
+"Brak stron\n"
+
+#: author.php:50
+msgid "Author articles"
+msgstr ""
+"Artykuły autorskie\n"
+
+#: author.php:74
+msgid "No articles"
+msgstr ""
+"Brak artykułów\n"
+
+#: author.php:84
+msgid "Author casino reviews"
+msgstr ""
+"Recenzje kasyn autora\n"
+
+#: author.php:111
+msgid "No casino reviews"
+msgstr ""
+"Brak recenzji kasyn\n"
+
+#: author.php:123
+msgid "Author slot reviews"
+msgstr ""
+"Recenzje autorów slotów\n"
+
+#: author.php:150
+msgid "No slot reviews"
+msgstr ""
+"Brak recenzji slotów\n"
+
+#: footer.php:34
+msgid "© All Rights Reserved | website.com"
+msgstr "© Wszelkie prawa zastrzeżone | Kasynogracz.pl"
+
+#: front-page.php:20
+msgid "Page Content"
+msgstr ""
+"Zawartość strony\n"
+
+#: index.php:11
+msgid "News"
+msgstr ""
+
+#: index.php:18
+msgid "Author: "
+msgstr ""
+
+#. Name of the template
+msgid "Page With Sidebar"
+msgstr ""
+
+#: page-with-sidebar.php:13 page.php:8
+msgid "Updated: "
+msgstr "Zaktualizowano: "
+
+#: search.php:26
+msgid "Read more"
+msgstr ""
+"Czytaj więcej\n"
+
+#: search.php:36
+msgid "Nothing Found"
+msgstr ""
+"Nic nie znaleziono\n"
+
+#: search.php:37
+msgid "Sorry, no page or post matched your search criteria."
+msgstr ""
+"Przepraszamy, żadna strona ani post nie spełniają kryteriów wyszukiwania.\n"
+
+#: search.php:38
+msgid "Try again with different keywords"
+msgstr ""
+"Spróbuj ponownie, używając innych słów kluczowych\n"
+
 #: inc/author-box.php:45
 msgid "About author"
 msgstr ""
@@ -25,34 +133,13 @@ msgid "All posts from"
 msgstr ""
 "Wszystkie posty z\n"
 
-#: author.php:50
-msgid "Author articles"
+#. Name of the theme
+msgid "Spartacus"
 msgstr ""
-"Artykuły autorskie\n"
-
-#: author.php:84
-msgid "Author casino reviews"
-msgstr ""
-"Recenzje kasyn autora\n"
-
-#: author.php:16
-msgid "Author pages"
-msgstr ""
-"Strony autorskie\n"
-
-#: author.php:123
-msgid "Author slot reviews"
-msgstr ""
-"Recenzje autorów slotów\n"
 
 #. Description of the theme
 msgid "Custom casino theme"
 msgstr ""
-
-#: 404.php:16
-msgid "Go to the homepage"
-msgstr ""
-"Przejdź do strony głównej\n"
 
 #. URI of the theme
 #. Author URI of the theme
@@ -62,78 +149,3 @@ msgstr ""
 #. Author of the theme
 msgid "KR"
 msgstr ""
-
-#: author.php:74
-msgid "No articles"
-msgstr ""
-"Brak artykułów\n"
-
-#: author.php:111
-msgid "No casino reviews"
-msgstr ""
-"Brak recenzji kasyn\n"
-
-#: author.php:40
-msgid "No pages"
-msgstr ""
-"Brak stron\n"
-
-#: author.php:150
-msgid "No slot reviews"
-msgstr ""
-"Brak recenzji slotów\n"
-
-#: search.php:36
-msgid "Nothing Found"
-msgstr ""
-"Nic nie znaleziono\n"
-
-#: front-page.php:20
-msgid "Page Content"
-msgstr ""
-"Zawartość strony\n"
-
-#: 404.php:14
-msgid "PAGE NOT FOUND"
-msgstr ""
-"Strona nie znaleziona\n"
-
-#. Name of the template
-msgid "Page With Sidebar"
-msgstr ""
-
-#: author.php:35 author.php:69 author.php:106 author.php:145
-msgid "Read More"
-msgstr ""
-"Czytaj więcej\n"
-
-#: search.php:26
-msgid "Read more"
-msgstr ""
-"Czytaj więcej\n"
-
-#: search.php:37
-msgid "Sorry, no page or post matched your search criteria."
-msgstr ""
-"Przepraszamy, żadna strona ani post nie spełniają kryteriów wyszukiwania.\n"
-
-#. Name of the theme
-msgid "Spartacus"
-msgstr ""
-
-#: 404.php:15
-msgid ""
-"The page you are looking for might have been removed, had its name changed "
-"or is temporarily unavailable"
-msgstr ""
-"Strona, której szukasz, mogła zostać usunięta, miała zmienioną nazwę lub "
-"jest tymczasowo niedostępna\n"
-
-#: search.php:38
-msgid "Try again with different keywords"
-msgstr ""
-"Spróbuj ponownie, używając innych słów kluczowych\n"
-
-#: page-with-sidebar.php:13 page.php:8
-msgid "Updated: "
-msgstr "Zaktualizowano: "

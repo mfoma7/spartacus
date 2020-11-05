@@ -30,7 +30,8 @@
                 <?php include_once 'template-parts/footer/language-switcher.php'; ?>
             </div>
             <div class="lower-footer__copyright">
-                <?php echo the_field('copyright_text', 'options'); ?>
+                <?php echo date("Y"); ?>
+                <?php _e('© All Rights Reserved | website.com', 'spartacus') ?>
             </div>
             <div class="lower-footer__flag">
                 <?php if (get_field('copyright_flag', 'options')) : ?>
