@@ -166,6 +166,7 @@ if (function_exists('acf_add_local_field_group')) :
         'hide_on_screen' => '',
         'active' => true,
         'description' => '',
+        'modified' => false,
     ));
 
     acf_add_local_field_group(array(
@@ -496,6 +497,7 @@ if (function_exists('acf_add_local_field_group')) :
         'hide_on_screen' => '',
         'active' => true,
         'description' => '',
+        'modified' => false,
     ));
 
     acf_add_local_field_group(array(
@@ -508,7 +510,7 @@ if (function_exists('acf_add_local_field_group')) :
                 'name' => 'spartacus_front_page_header_elements',
                 'type' => 'repeater',
                 'instructions' => '3 block elements for front page(casinos/slots/bonuses)
-    Use icons from flaticon.com or icons8.com',
+            Use icons from flaticon.com or icons8.com',
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
@@ -625,11 +627,12 @@ if (function_exists('acf_add_local_field_group')) :
         'hide_on_screen' => '',
         'active' => true,
         'description' => '',
+        'modified' => false,
     ));
 
     acf_add_local_field_group(array(
         'key' => 'group_5ef09bc278375',
-        'title' => 'Spartacus Header block',
+        'title' => 'Spartacus Header Introduction',
         'fields' => array(
             array(
                 'key' => 'field_5efeeb5e469f7',
@@ -756,6 +759,7 @@ if (function_exists('acf_add_local_field_group')) :
         'hide_on_screen' => '',
         'active' => true,
         'description' => '',
+        'modified' => false,
     ));
 
     acf_add_local_field_group(array(
@@ -845,6 +849,7 @@ if (function_exists('acf_add_local_field_group')) :
         'hide_on_screen' => '',
         'active' => true,
         'description' => '',
+        'modified' => false,
     ));
 
     acf_add_local_field_group(array(
@@ -981,11 +986,12 @@ if (function_exists('acf_add_local_field_group')) :
         'hide_on_screen' => '',
         'active' => true,
         'description' => '',
+        'modified' => false,
     ));
 
     acf_add_local_field_group(array(
         'key' => 'group_5f968cf218a7b',
-        'title' => 'Text Block',
+        'title' => 'Spartacus Text Block',
         'fields' => array(
             array(
                 'key' => 'field_5f968e986398f',
