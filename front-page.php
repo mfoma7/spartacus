@@ -32,8 +32,9 @@
 
 <main class="container page section no-sidebar">
     <div class="page-content">
+        <?php echo do_shortcode("[widget id='toplist' class='class_name' shortcode='csn_home_toplist']"); ?>
         <?php while (have_posts()) : the_post(); ?>
-                <?php the_content(); ?>
+            <?php the_content(); ?>
         <?php endwhile; ?>
     </div>
 </main>

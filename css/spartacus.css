@@ -572,18 +572,18 @@ i.icon-up-open {
     margin        : 2rem 0;
     display       : flex;
     flex-direction: column;
-    align-items   : flex-start;
+    align-items   : center;
 }
 
 .mid-footer__extra {
     width     : 100%;
     text-align: center;
-    font-size: 1.1rem;
+    font-size : 1.1rem;
 }
 
 .mid-footer__extra a {
-    color:rgb(199, 21, 21);
-    font-size: 1.5rem;
+    color      : rgb(199, 21, 21);
+    font-size  : 1.5rem;
     font-weight: bold;
 }
 
@@ -701,6 +701,7 @@ i.icon-up-open {
 .header-block {
     padding         : 1rem 0 2rem;
     background-image: url(../img/header-pattern.png);
+    position        : relative;
 }
 
 .header-blocks {
@@ -1787,82 +1788,82 @@ ul {
 /* Table styling */
 
 @media (min-width:601px) {
-    .page-content table {
-        margin         : 0 auto;
+    table {
+        margin         : 20px auto;
         border         : 1px solid #e4e4e4;
         width          : 100%;
         border-collapse: collapse;
     }
 
-    .page-content td {
+    td {
         border : 1px solid #e4e4e4;
         padding: 5px;
     }
 
-    .page-content thead tr th {
+    thead tr th {
         border: 1px solid #e4e4e4;
     }
 
-    .single-casino-main table {
+    table {
         margin         : 0 auto;
         border         : 1px solid #e4e4e4;
         width          : 100%;
         border-collapse: collapse;
     }
 
-    .single-casino-main td {
+    td {
         border : 1px solid #e4e4e4;
         padding: 5px;
     }
 
-    .single-casino-main thead tr th {
+    thead tr th {
         border: 1px solid #e4e4e4;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .single-casino-main table {
+    table {
         width: 100%;
     }
 
-    .single-casino-main thead {
+    thead {
         display: none;
     }
 
-    .single-casino-main tr:nth-of-type(2n) {
+    tr:nth-of-type(2n) {
         background-color: inherit;
     }
 
-    .single-casino-main tr td:first-child {
+    tr td:first-child {
         background : #f0f0f0;
         font-weight: bold;
         font-size  : 1.3em;
     }
 
-    .single-casino-main tbody td {
+    tbody td {
         display   : block;
         text-align: center;
     }
 
-    .page-content table {
+    table {
         width: 100%;
     }
 
-    .page-content thead {
+    thead {
         display: none;
     }
 
-    .page-content tr:nth-of-type(2n) {
+    tr:nth-of-type(2n) {
         background-color: inherit;
     }
 
-    .page-content tr td:first-child {
+    tr td:first-child {
         background : #f0f0f0;
         font-weight: bold;
         font-size  : 1.3em;
     }
 
-    .page-content tbody td {
+    tbody td {
         display   : block;
         text-align: center;
     }
