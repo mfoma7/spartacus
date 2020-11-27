@@ -1788,82 +1788,83 @@ ul {
 /* Table styling */
 
 @media (min-width:601px) {
-    table {
+    .page-content table {
         margin         : 20px auto;
         border         : 1px solid #e4e4e4;
         width          : 100%;
         border-collapse: collapse;
     }
 
-    td {
+    .page-content td {
         border : 1px solid #e4e4e4;
         padding: 5px;
     }
 
-    thead tr th {
+    .page-content thead tr th {
         border: 1px solid #e4e4e4;
     }
 
-    table {
+    .page-content table {
         margin         : 0 auto;
         border         : 1px solid #e4e4e4;
         width          : 100%;
         border-collapse: collapse;
     }
 
-    td {
+    .page-content td {
         border : 1px solid #e4e4e4;
         padding: 5px;
     }
 
-    thead tr th {
+    .page-content thead tr th {
         border: 1px solid #e4e4e4;
     }
+
 }
 
 @media screen and (max-width: 600px) {
-    table {
+    .page-content table {
         width: 100%;
     }
 
-    thead {
+    .page-content thead {
         display: none;
     }
 
-    tr:nth-of-type(2n) {
+    .page-content tr:nth-of-type(2n) {
         background-color: inherit;
     }
 
-    tr td:first-child {
+    .page-content tr td:first-child {
         background : #f0f0f0;
         font-weight: bold;
         font-size  : 1.3em;
     }
 
-    tbody td {
+    .page-content tbody td {
         display   : block;
         text-align: center;
     }
 
-    table {
+    .page-content table {
         width: 100%;
     }
 
-    thead {
+    .page-content thead {
         display: none;
     }
 
-    tr:nth-of-type(2n) {
+    .page-content tr:nth-of-type(2n) {
         background-color: inherit;
     }
 
-    tr td:first-child {
+    .page-content tr td:first-child {
         background : #f0f0f0;
         font-weight: bold;
         font-size  : 1.3em;
     }
 
-    tbody td {
+    .page-content tbody td {
         display   : block;
         text-align: center;
     }
