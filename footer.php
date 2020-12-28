@@ -35,7 +35,7 @@
             <div class="lower-footer__copyright">
                 <?php echo date("Y"); ?>
                 <?php _e('© All Rights Reserved |', 'spartacus') ?>
-		<?php echo homeurl(); ?>
+		<?php echo spartacus_homeurl(); ?>
             </div>
             <div class="lower-footer__flag">
                 <?php if (get_field('copyright_flag', 'options')) : ?>
