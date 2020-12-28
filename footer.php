@@ -1,3 +1,6 @@
+
+
+
 <footer class="site-footer">
     <div class="footer-content container">
         <div class="upper-footer">
@@ -31,7 +34,8 @@
             </div>
             <div class="lower-footer__copyright">
                 <?php echo date("Y"); ?>
-                <?php _e('© All Rights Reserved | website.com', 'spartacus') ?>
+                <?php _e('© All Rights Reserved |', 'spartacus') ?>
+		<?php echo homeurl(); ?>
             </div>
             <div class="lower-footer__flag">
                 <?php if (get_field('copyright_flag', 'options')) : ?>

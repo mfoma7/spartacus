@@ -218,6 +218,16 @@ add_action('widgets_init', 'spartacus_unregister_widgets');
 //Create Person schema
 add_action('wp_head', 'spartacus_schema');
 
+//Function adds home_url without https://www
+function homeurl()
+{
+	$homeurl = get_home_url();
+	$find = array( 'http://', 'https://' );
+	$replace = '';
+	$output = str_replace( $find, $replace, $homeurl );
+	echo  $output ;
+
+}
 
 //Function that adds person schema to pages and posts
 function spartacus_schema()
